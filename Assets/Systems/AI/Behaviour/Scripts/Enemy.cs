@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -19,10 +20,27 @@ public class Enemy : MonoBehaviour
 
     Sight sight;
 
+    private Life life;
+
     private void Awake()
     {
         this.sight = GetComponent<Sight>();
         this.characterController = GetComponent<CharacterController2D>();
+
+        //Cacheamos el componente de vida
+        this.life = GetComponent<Life>();
+    }
+
+    private void OnEnable()
+    {
+        //De momento los enemigos simplemente escucharán al evento OnLifeDepleted (cuando la barra de vida llega a su fin)
+        this.life.onLifeDepleted.AddListener(OnLifeDepleted);
+    }
+
+    private void OnDisable()
+    {
+        //De momento los enemigos simplemente escucharán al evento OnLifeDepleted (cuando la barra de vida llega a su fin)
+        this.life.onLifeDepleted.RemoveListener(OnLifeDepleted);
     }
 
 
@@ -65,9 +83,17 @@ public class Enemy : MonoBehaviour
                     //Acercarme:
                     //Obtenemos el vector de la dirección entre la posición donde está el personaje al que va a perseguir el enemigo y el enemigo en sí:
                     //Normalizamos el vector resultante para que no mida más de 1, pues sólo necesitamos la dirección del movimiento:
-                    Vector2 searchDirection = (sight.VisiblesInSight[0].GetTransform().position - transform.position).normalized;
-                    this.characterController.SetRawMove(searchDirection);
-
+                    try
+                    {
+                        Vector2 searchDirection = (sight.VisiblesInSight[0].GetTransform().position - transform.position).normalized;
+                        this.characterController.SetRawMove(searchDirection);
+                    }
+                    catch(Exception)
+                    {
+                        //Si no pudimos obtener la dirección a seguir (puede que el gameobject ya se haya destruido), volvemos
+                        //al estado Guarding:
+                        this.currentState = State.Guarding;
+                    }
                 }
                 break;
             case State.Attacking:
@@ -78,5 +104,11 @@ public class Enemy : MonoBehaviour
                 break;
         }
 
+    }
+
+    private void OnLifeDepleted(float startLife)
+    {
+        //Destruimos el gameobject del enemigo
+        Destroy(this.gameObject);
     }
 }

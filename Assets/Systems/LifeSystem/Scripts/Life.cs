@@ -9,15 +9,9 @@ public class Life : MonoBehaviour
     [SerializeField] float damagePerHitPercentage = 30f;
     [SerializeField] float mediumHeartPercentage = 50f;
     [SerializeField] float fullHeartPercentage = 100;
-    [SerializeField] private int lifesNumber = 3;
-    public int LifesNumber
-    {
-        get => this.lifesNumber;
-    }
     [SerializeField] private float recoverySecondsLimit = 1.5f;
-    public bool recovering = false;
+    private bool recovering = false;
     private float actualRecoveringSeconds = 0f;
-
     /// <summary>
     /// Propiedad de sólo lectura para que otros objetos sepan si estamos en tiempo de recuperación
     /// </summary>
@@ -28,13 +22,7 @@ public class Life : MonoBehaviour
 
     public UnityEvent<float, float> onLifeChanged;
     public UnityEvent<float> onLifeDepleted; //vida agotada
-    public UnityEvent onTotallyDead; //Número de vidas a 0
-    public UnityEvent onHalfLifeRecoved; //Recuperamos la mitad de vida
-    public UnityEvent onFullLifeRecoved; //Recuperamos toda la vida
     HurtCollider hurtCollider;
-    CharacterController2D characterController2D;
-    LifeRecovery lifeRecovery;
-
     private float currentLifePercentage;
 
     [SerializeField] bool debugReceiveDamage;
@@ -55,31 +43,19 @@ public class Life : MonoBehaviour
     {
         this.currentLifePercentage = startLifePercentage;
 
-        //Cacheamos el hurtcollider y el liferecovery
+        //Cacheamos el hurtcollider
         this.hurtCollider = GetComponent<HurtCollider>();
-        this.lifeRecovery = GetComponent<LifeRecovery>();
-
-        //Cacheamos el character controller 2D
-        this.characterController2D = GetComponent<CharacterController2D>();
 
     }
 
     private void OnEnable()
     {
         this.hurtCollider.onHitReceive.AddListener(OnHitReceive);
-        if (this.lifeRecovery != null)
-        {
-            this.lifeRecovery.onLifeRecovery.AddListener(OnLifeRecovery);
-        }
     }
 
     private void OnDisable()
     {
         this.hurtCollider.onHitReceive.RemoveListener(OnHitReceive);
-        if (this.lifeRecovery != null)
-        {
-            this.lifeRecovery.onLifeRecovery.RemoveListener(OnLifeRecovery);
-        }
     }
 
     private void Update()
@@ -88,6 +64,7 @@ public class Life : MonoBehaviour
         if (this.recovering)
         {
             this.actualRecoveringSeconds += Time.deltaTime;
+
             if (this.actualRecoveringSeconds > this.recoverySecondsLimit)
             {
                 this.recovering = false;
@@ -103,37 +80,30 @@ public class Life : MonoBehaviour
 
     private void OnHitReceive(string tagName)
     {
-        //Si el carácter está en fase de recuperación, no hay que hacerle daño, salvo que sea una caída al vacío
-        if (tagName.Equals("InstaKillFall"))
+
+        if (this.recovering == false)
         {
-            KillGameObject();
-        }
-        else
-        {
-            if (this.recovering == false)
+            //Si no estamos en fase de recuperación, distinguimos entre los golpes normales que tienen que quitar una cantidad de vida normal
+            //y los golpes de las trampas normales que deben quitar toda la vida directamente:
+            if (tagName.Equals("InstaKillTrap"))
             {
-                //Si no estamos en fase de recuperación, distinguimos entre los golpes normales que tienen que quitar una cantidad de vida normal
-                //y los golpes de las trampas normales que deben quitar toda la vida directamente:
-                if (tagName.Equals("InstaKillTrap"))
+                //Trampa mortal, matamos al personaje directamente:
+                KillGameObject();
+            }
+            else
+            {
+                //Golpe normal, quitamos la cantidad de daño que corresponde:
+                this.currentLifePercentage -= damagePerHitPercentage;
+
+                if (this.currentLifePercentage > 0)
                 {
-                    //Trampa mortal, matamos al personaje directamente:
-                    KillGameObject();
+                    this.recovering = true;
+                    onLifeChanged.Invoke(this.currentLifePercentage, this.startLifePercentage);
                 }
                 else
                 {
-                    //Golpe normal, quitamos la cantidad de daño que corresponde:
-                    this.currentLifePercentage -= damagePerHitPercentage;
-
-                    if (this.currentLifePercentage > 0)
-                    {
-                        this.recovering = true;
-                        onLifeChanged.Invoke(this.currentLifePercentage, this.startLifePercentage);
-                    }
-                    else
-                    {
-                        this.recovering = true;
-                        KillGameObject();
-                    }
+                    this.recovering = true;
+                    KillGameObject();
                 }
             }
         }
@@ -150,7 +120,6 @@ public class Life : MonoBehaviour
         else if (tagName.Equals("FullHeart"))
         {
             this.currentLifePercentage += this.fullHeartPercentage;
-            
         }
 
         //Controlamos que no hayamos superado el 100%
@@ -167,21 +136,6 @@ public class Life : MonoBehaviour
     {
         this.currentLifePercentage = 0f;
         onLifeChanged.Invoke(this.currentLifePercentage, this.startLifePercentage);
-        this.lifesNumber -= 1;
-
-        if (this.lifesNumber <= 0)
-        {
-            onTotallyDead.Invoke();
-        }
-        else
-        {
-            onLifeDepleted.Invoke(this.startLifePercentage);
-        }
-    }
-
-    internal void Restart()
-    {
-        this.currentLifePercentage = this.startLifePercentage;
-        onLifeChanged.Invoke(this.currentLifePercentage, this.startLifePercentage);
+        onLifeDepleted.Invoke(this.startLifePercentage);
     }
 }
