@@ -1,0 +1,2170 @@
+fileFormatVersion: 2
+guid: 6823a3ce7e7c0bb49907219738205c9c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5904432792840350235
+    second: SNES-Cursors_0
+  - first:
+      213: 4059842556079537577
+    second: SNES-Cursors_1
+  - first:
+      213: -8171391492020108251
+    second: SNES-Cursors_2
+  - first:
+      213: 2143970794981419271
+    second: SNES-Cursors_3
+  - first:
+      213: 2593276962440112362
+    second: SNES-Cursors_4
+  - first:
+      213: 4662731469572427851
+    second: SNES-Cursors_5
+  - first:
+      213: -9162483313997328513
+    second: SNES-Cursors_6
+  - first:
+      213: 6298052719216817951
+    second: SNES-Cursors_7
+  - first:
+      213: -4315699842067611800
+    second: SNES-Cursors_8
+  - first:
+      213: 8909164896621776965
+    second: SNES-Cursors_9
+  - first:
+      213: 8410327641293556854
+    second: SNES-Cursors_10
+  - first:
+      213: 6099396814744011662
+    second: SNES-Cursors_11
+  - first:
+      213: 2110434566597060001
+    second: SNES-Cursors_12
+  - first:
+      213: -7636257826026201364
+    second: SNES-Cursors_13
+  - first:
+      213: 4264630210721488175
+    second: SNES-Cursors_14
+  - first:
+      213: -5412362758486736398
+    second: SNES-Cursors_15
+  - first:
+      213: -3268311278071663503
+    second: SNES-Cursors_16
+  - first:
+      213: -7848156395262012325
+    second: SNES-Cursors_17
+  - first:
+      213: 3294234128827934105
+    second: SNES-Cursors_18
+  - first:
+      213: 6998081152979199785
+    second: SNES-Cursors_19
+  - first:
+      213: 5372994848099773754
+    second: SNES-Cursors_20
+  - first:
+      213: -3615515160692708477
+    second: SNES-Cursors_21
+  - first:
+      213: -4577895676442769867
+    second: SNES-Cursors_22
+  - first:
+      213: 3080913284011613776
+    second: SNES-Cursors_23
+  - first:
+      213: -9020624242918625110
+    second: SNES-Cursors_24
+  - first:
+      213: -2008541553319355943
+    second: SNES-Cursors_25
+  - first:
+      213: 7321733343443011232
+    second: SNES-Cursors_26
+  - first:
+      213: 1584655297808262262
+    second: SNES-Cursors_27
+  - first:
+      213: 6275646643374509919
+    second: SNES-Cursors_28
+  - first:
+      213: -7184522448950935106
+    second: SNES-Cursors_29
+  - first:
+      213: 5621081260646509701
+    second: SNES-Cursors_30
+  - first:
+      213: 1514779607725753440
+    second: SNES-Cursors_31
+  - first:
+      213: 4745719223477972507
+    second: SNES-Cursors_32
+  - first:
+      213: 1367784544767167863
+    second: SNES-Cursors_33
+  - first:
+      213: -4269893384065446265
+    second: SNES-Cursors_34
+  - first:
+      213: 8466449647406313891
+    second: SNES-Cursors_35
+  - first:
+      213: -553428403815779286
+    second: SNES-Cursors_36
+  - first:
+      213: 4011488234184025962
+    second: SNES-Cursors_37
+  - first:
+      213: 1614039193269567153
+    second: SNES-Cursors_38
+  - first:
+      213: -7073787767740409013
+    second: SNES-Cursors_39
+  - first:
+      213: -5772029879468061830
+    second: SNES-Cursors_40
+  - first:
+      213: -8742158370659492583
+    second: SNES-Cursors_41
+  - first:
+      213: 7997159300104604896
+    second: SNES-Cursors_42
+  - first:
+      213: -9018358791801057381
+    second: SNES-Cursors_43
+  - first:
+      213: 6365747033160680915
+    second: SNES-Cursors_44
+  - first:
+      213: -95089194922068223
+    second: SNES-Cursors_45
+  - first:
+      213: -5274306447400052015
+    second: SNES-Cursors_46
+  - first:
+      213: -6373222103150068828
+    second: SNES-Cursors_47
+  - first:
+      213: -3014121377070291285
+    second: SNES-Cursors_48
+  - first:
+      213: 2142963937206855463
+    second: SNES-Cursors_49
+  - first:
+      213: -4716111051133641386
+    second: SNES-Cursors_50
+  - first:
+      213: -4341788025577557768
+    second: SNES-Cursors_51
+  - first:
+      213: 7222034695886043129
+    second: SNES-Cursors_52
+  - first:
+      213: 4621157360972608351
+    second: SNES-Cursors_53
+  - first:
+      213: -5141275057584297976
+    second: SNES-Cursors_54
+  - first:
+      213: -5481112637071676986
+    second: SNES-Cursors_55
+  - first:
+      213: -3603343362237499422
+    second: SNES-Cursors_56
+  - first:
+      213: -5643824104910814920
+    second: SNES-Cursors_57
+  - first:
+      213: -5336566840650320425
+    second: SNES-Cursors_58
+  - first:
+      213: -5793184292154057543
+    second: SNES-Cursors_59
+  - first:
+      213: -4538061592813477539
+    second: SNES-Cursors_60
+  - first:
+      213: 7390972618086582022
+    second: SNES-Cursors_61
+  - first:
+      213: -1617678981789582196
+    second: SNES-Cursors_62
+  - first:
+      213: 3827677753439346582
+    second: SNES-Cursors_63
+  - first:
+      213: -2862537694608804253
+    second: SNES-Cursors_64
+  - first:
+      213: -7781465005803185586
+    second: SNES-Cursors_65
+  - first:
+      213: 1345172312381194665
+    second: SNES-Cursors_66
+  - first:
+      213: -3910029723041610467
+    second: SNES-Cursors_67
+  - first:
+      213: 5402035358422155402
+    second: SNES-Cursors_68
+  - first:
+      213: 6411768494822873969
+    second: SNES-Cursors_69
+  - first:
+      213: 1567617988651241784
+    second: SNES-Cursors_70
+  - first:
+      213: -5636054515742717638
+    second: SNES-Cursors_71
+  - first:
+      213: -3926016209738793229
+    second: SNES-Cursors_72
+  - first:
+      213: 2659413668440573280
+    second: SNES-Cursors_73
+  - first:
+      213: -4150288315350970431
+    second: SNES-Cursors_74
+  - first:
+      213: -1022341707729341048
+    second: SNES-Cursors_75
+  - first:
+      213: 1098812573558427011
+    second: SNES-Cursors_76
+  - first:
+      213: 312184606998160573
+    second: SNES-Cursors_77
+  - first:
+      213: -1599416483401363002
+    second: SNES-Cursors_78
+  - first:
+      213: -293117471616402805
+    second: SNES-Cursors_79
+  - first:
+      213: 2476362469032045060
+    second: SNES-Cursors_80
+  - first:
+      213: 2312363841994555492
+    second: SNES-Cursors_81
+  - first:
+      213: 7358261233749477861
+    second: SNES-Cursors_82
+  - first:
+      213: 5857009312396457169
+    second: SNES-Cursors_83
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SNES-Cursors_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 96
+        height: 496
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1aaa619752c0f150800000000000000
+      internalID: 5904432792840350235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 512
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ad72277b45775830800000000000000
+      internalID: 4059842556079537577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5240e7d5bb2699e80800000000000000
+      internalID: -8171391492020108251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_3
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 495
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 709edab241ae0cd10800000000000000
+      internalID: 2143970794981419271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_4
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 500
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae8627658ab2df320800000000000000
+      internalID: 2593276962440112362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_5
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 495
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4056ee319955b040800000000000000
+      internalID: 4662731469572427851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_6
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 480
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7fceb888f158d080800000000000000
+      internalID: -9162483313997328513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_7
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 463
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f17f991649d276750800000000000000
+      internalID: 6298052719216817951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_8
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 468
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86fb954fbdd8b14c0800000000000000
+      internalID: -4315699842067611800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_9
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 463
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 540558c4546b3ab70800000000000000
+      internalID: 8909164896621776965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_10
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 448
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67c83ff0e6c77b470800000000000000
+      internalID: 8410327641293556854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_11
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 431
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8347f6461965a450800000000000000
+      internalID: 6099396814744011662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_12
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 436
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a529b78e05c94d10800000000000000
+      internalID: 2110434566597060001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_13
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 431
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cee596247ff860690800000000000000
+      internalID: -7636257826026201364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_14
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 416
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2d1478e4920f2b30800000000000000
+      internalID: 4264630210721488175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_15
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 399
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f148d04fbc63e4b0800000000000000
+      internalID: -5412362758486736398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_16
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 404
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 174b2277530a4a2d0800000000000000
+      internalID: -3268311278071663503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_17
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 399
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5492bef65fb51390800000000000000
+      internalID: -7848156395262012325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_18
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 384
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 995e1cf8c7877bd20800000000000000
+      internalID: 3294234128827934105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_19
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 367
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9276ea03bbd2e1160800000000000000
+      internalID: 6998081152979199785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_20
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 372
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3dadf4d856b09a40800000000000000
+      internalID: 5372994848099773754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_21
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 367
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38b2fdefd1c13ddc0800000000000000
+      internalID: -3615515160692708477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_22
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 352
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53605d2132c0870c0800000000000000
+      internalID: -4577895676442769867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_23
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 335
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05e5b45fe4a91ca20800000000000000
+      internalID: 3080913284011613776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_24
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 340
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa0fe8c5b0e40d280800000000000000
+      internalID: -9020624242918625110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_25
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 335
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d9d9c5591a3024e0800000000000000
+      internalID: -2008541553319355943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_26
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 320
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a6cd040fa50c9560800000000000000
+      internalID: 7321733343443011232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_27
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 303
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6746d45f893ddf510800000000000000
+      internalID: 1584655297808262262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_28
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 308
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5fc5325f53971750800000000000000
+      internalID: 6275646643374509919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_29
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 303
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb1c57dd5e27b4c90800000000000000
+      internalID: -7184522448950935106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_30
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 288
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58ca072ff97120e40800000000000000
+      internalID: 5621081260646509701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_31
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 271
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 064cf7f0704950510800000000000000
+      internalID: 1514779607725753440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_32
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 276
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1ea5276d7e2cd140800000000000000
+      internalID: 4745719223477972507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_33
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 271
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77dcd10fbc85bf210800000000000000
+      internalID: 1367784544767167863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_34
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 256
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78e0dfd079a4eb4c0800000000000000
+      internalID: -4269893384065446265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_35
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 239
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a1726ed81fde7570800000000000000
+      internalID: 8466449647406313891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_36
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 244
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a24f2f58cc3d158f0800000000000000
+      internalID: -553428403815779286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_37
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 239
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a67a2339b4baba730800000000000000
+      internalID: 4011488234184025962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_38
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 224
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bef3604818366610800000000000000
+      internalID: 1614039193269567153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_39
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 207
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4b5457f08bd4dd90800000000000000
+      internalID: -7073787767740409013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_40
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 212
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7b8d59f761a5efa0800000000000000
+      internalID: -5772029879468061830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_41
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 207
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91d12a2a74d9da680800000000000000
+      internalID: -8742158370659492583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_42
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 192
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ec42fe330e9bfe60800000000000000
+      internalID: 7997159300104604896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_43
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 175
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9f4dadc57a58d280800000000000000
+      internalID: -9018358791801057381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_44
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 180
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d50a81133da75850800000000000000
+      internalID: 6365747033160680915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_45
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 175
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10731ba81ec2eaef0800000000000000
+      internalID: -95089194922068223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_46
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 160
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dada260b36edc6b0800000000000000
+      internalID: -5274306447400052015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_47
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 143
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ab72139344cd87a0800000000000000
+      internalID: -6373222103150068828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_48
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 148
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba660d9b390bb26d0800000000000000
+      internalID: -3014121377070291285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_49
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 143
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 727efa3d8565dbd10800000000000000
+      internalID: 2142963937206855463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_50
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 128
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65d92eb6cf10d8eb0800000000000000
+      internalID: -4716111051133641386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_51
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 111
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f0b7656bcedeb3c0800000000000000
+      internalID: -4341788025577557768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_52
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 116
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f775dbba42d93460800000000000000
+      internalID: 7222034695886043129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_53
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 111
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5334f7c226a12040800000000000000
+      internalID: 4621157360972608351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_54
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 96
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 808ac14239586a8b0800000000000000
+      internalID: -5141275057584297976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_55
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 79
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c92075c81d2fe3b0800000000000000
+      internalID: -5481112637071676986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_56
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 84
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e7721aad4a5efdc0800000000000000
+      internalID: -3603343362237499422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_57
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 79
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 831010cf0eb1da1b0800000000000000
+      internalID: -5643824104910814920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_58
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 64
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d5b8e69bb4b0f5b0800000000000000
+      internalID: -5336566840650320425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_60
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 52
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d51628766019501c0800000000000000
+      internalID: -4538061592813477539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_61
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 47
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60780b5ef62029660800000000000000
+      internalID: 7390972618086582022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_62
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8cf0d17989dc89e0800000000000000
+      internalID: -1617678981789582196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_63
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 17
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69fda6803a4ae1530800000000000000
+      internalID: 3827677753439346582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_64
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 31
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3663da412293648d0800000000000000
+      internalID: -2862537694608804253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_65
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 31
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4ad7f02ecea20490800000000000000
+      internalID: -7781465005803185586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_66
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 31
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a10c2157130ba210800000000000000
+      internalID: 1345172312381194665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_67
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 31
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d15c2e0eea8ccb9c0800000000000000
+      internalID: -3910029723041610467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_68
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 31
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a804ada8982e7fa40800000000000000
+      internalID: 5402035358422155402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_69
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 22
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17b55fb997d2bf850800000000000000
+      internalID: 6411768494822873969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_75
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 31
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 885f9b722a9efc1f0800000000000000
+      internalID: -1022341707729341048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_76
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 18
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38dcea1c634cf3f00800000000000000
+      internalID: 1098812573558427011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_77
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 19
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db4687cfe3a155400800000000000000
+      internalID: 312184606998160573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_78
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 20
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c115f2be2bbdc9e0800000000000000
+      internalID: -1599416483401363002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_79
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 21
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8af7da6633aeebf0800000000000000
+      internalID: -293117471616402805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40aa3c59b8ecd5220800000000000000
+      internalID: 2476362469032045060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_81
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4600b81b9aa271020800000000000000
+      internalID: 2312363841994555492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_82
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e94a2a3b9bcd1660800000000000000
+      internalID: 7358261233749477861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-Cursors_83
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d4bb8710f6484150800000000000000
+      internalID: 5857009312396457169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 8b8542e782021b648b836393a857f907
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SNES-Cursors_0: 5904432792840350235
+      SNES-Cursors_1: 4059842556079537577
+      SNES-Cursors_10: 8410327641293556854
+      SNES-Cursors_11: 6099396814744011662
+      SNES-Cursors_12: 2110434566597060001
+      SNES-Cursors_13: -7636257826026201364
+      SNES-Cursors_14: 4264630210721488175
+      SNES-Cursors_15: -5412362758486736398
+      SNES-Cursors_16: -3268311278071663503
+      SNES-Cursors_17: -7848156395262012325
+      SNES-Cursors_18: 3294234128827934105
+      SNES-Cursors_19: 6998081152979199785
+      SNES-Cursors_2: -8171391492020108251
+      SNES-Cursors_20: 5372994848099773754
+      SNES-Cursors_21: -3615515160692708477
+      SNES-Cursors_22: -4577895676442769867
+      SNES-Cursors_23: 3080913284011613776
+      SNES-Cursors_24: -9020624242918625110
+      SNES-Cursors_25: -2008541553319355943
+      SNES-Cursors_26: 7321733343443011232
+      SNES-Cursors_27: 1584655297808262262
+      SNES-Cursors_28: 6275646643374509919
+      SNES-Cursors_29: -7184522448950935106
+      SNES-Cursors_3: 2143970794981419271
+      SNES-Cursors_30: 5621081260646509701
+      SNES-Cursors_31: 1514779607725753440
+      SNES-Cursors_32: 4745719223477972507
+      SNES-Cursors_33: 1367784544767167863
+      SNES-Cursors_34: -4269893384065446265
+      SNES-Cursors_35: 8466449647406313891
+      SNES-Cursors_36: -553428403815779286
+      SNES-Cursors_37: 4011488234184025962
+      SNES-Cursors_38: 1614039193269567153
+      SNES-Cursors_39: -7073787767740409013
+      SNES-Cursors_4: 2593276962440112362
+      SNES-Cursors_40: -5772029879468061830
+      SNES-Cursors_41: -8742158370659492583
+      SNES-Cursors_42: 7997159300104604896
+      SNES-Cursors_43: -9018358791801057381
+      SNES-Cursors_44: 6365747033160680915
+      SNES-Cursors_45: -95089194922068223
+      SNES-Cursors_46: -5274306447400052015
+      SNES-Cursors_47: -6373222103150068828
+      SNES-Cursors_48: -3014121377070291285
+      SNES-Cursors_49: 2142963937206855463
+      SNES-Cursors_5: 4662731469572427851
+      SNES-Cursors_50: -4716111051133641386
+      SNES-Cursors_51: -4341788025577557768
+      SNES-Cursors_52: 7222034695886043129
+      SNES-Cursors_53: 4621157360972608351
+      SNES-Cursors_54: -5141275057584297976
+      SNES-Cursors_55: -5481112637071676986
+      SNES-Cursors_56: -3603343362237499422
+      SNES-Cursors_57: -5643824104910814920
+      SNES-Cursors_58: -5336566840650320425
+      SNES-Cursors_59: -5793184292154057543
+      SNES-Cursors_6: -9162483313997328513
+      SNES-Cursors_60: -4538061592813477539
+      SNES-Cursors_61: 7390972618086582022
+      SNES-Cursors_62: -1617678981789582196
+      SNES-Cursors_63: 3827677753439346582
+      SNES-Cursors_64: -2862537694608804253
+      SNES-Cursors_65: -7781465005803185586
+      SNES-Cursors_66: 1345172312381194665
+      SNES-Cursors_67: -3910029723041610467
+      SNES-Cursors_68: 5402035358422155402
+      SNES-Cursors_69: 6411768494822873969
+      SNES-Cursors_7: 6298052719216817951
+      SNES-Cursors_70: 1567617988651241784
+      SNES-Cursors_71: -5636054515742717638
+      SNES-Cursors_72: -3926016209738793229
+      SNES-Cursors_73: 2659413668440573280
+      SNES-Cursors_74: -4150288315350970431
+      SNES-Cursors_75: -1022341707729341048
+      SNES-Cursors_76: 1098812573558427011
+      SNES-Cursors_77: 312184606998160573
+      SNES-Cursors_78: -1599416483401363002
+      SNES-Cursors_79: -293117471616402805
+      SNES-Cursors_8: -4315699842067611800
+      SNES-Cursors_80: 2476362469032045060
+      SNES-Cursors_81: 2312363841994555492
+      SNES-Cursors_82: 7358261233749477861
+      SNES-Cursors_83: 5857009312396457169
+      SNES-Cursors_84: -167983812
+      SNES-Cursors_9: 8909164896621776965
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

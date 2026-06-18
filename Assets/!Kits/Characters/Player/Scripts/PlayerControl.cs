@@ -8,6 +8,8 @@ public class PlayerControl : MonoBehaviour
     [Header("CharacterActions")]
     [SerializeField] InputActionReference move;
     [SerializeField] InputActionReference attack;
+    [SerializeField] InputActionReference showInventory;
+    [SerializeField] GameObject canvasInventoryPanel;
     CharacterController2D characterController;
 
     [Header("BlinkAfterHit")]
@@ -35,11 +37,25 @@ public class PlayerControl : MonoBehaviour
         move.action.canceled += OnMove; //cada vez que finaliza una acción
 
         attack.action.Enable();
+        showInventory.action.Enable();
+        showInventory.action.started += OnPressInventoryButton;
 
         //El jugador escuchará los eventos OnLifeChanged (cuando la barra de vida aumenta o dismunuye)
         //y OnLifeDepleted (cuando la barra de vida llega a su fin)
         this.life.onLifeChanged.AddListener(OnLifeChanged);
         this.life.onLifeDepleted.AddListener(OnLifeDepleted);
+    }
+
+    private void OnPressInventoryButton(InputAction.CallbackContext context)
+    {
+        if(this.canvasInventoryPanel.activeSelf == false)
+        {
+            this.canvasInventoryPanel.SetActive(true);
+        }
+        else 
+        {
+            this.canvasInventoryPanel.SetActive(false);
+        }
     }
 
 
@@ -104,6 +120,8 @@ public class PlayerControl : MonoBehaviour
         move.action.performed -= OnMove;
 
         attack.action.Disable();
+        showInventory.action.Disable();
+        showInventory.action.started -= OnPressInventoryButton;
 
         //El jugador escuchará los eventos OnLifeChanged (cuando la barra de vida aumenta o dismunuye)
         //y OnLifeDepleted (cuando la barra de vida llega a su fin)

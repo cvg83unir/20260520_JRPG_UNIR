@@ -1,14 +1,13 @@
 using System;
 using UnityEngine;
 using UnityEngine.Events;
+using static UnityEngine.AdaptivePerformance.Provider.AdaptivePerformanceSubsystemDescriptor;
 
 public class Life : MonoBehaviour
 {
     [Header("LifeParametersAndRecovery")]
     [SerializeField] float startLifePercentage = 100f;
     [SerializeField] float damagePerHitPercentage = 30f;
-    [SerializeField] float mediumHeartPercentage = 50f;
-    [SerializeField] float fullHeartPercentage = 100;
     [SerializeField] private float recoverySecondsLimit = 1.5f;
     private bool recovering = false;
     private float actualRecoveringSeconds = 0f;
@@ -24,6 +23,9 @@ public class Life : MonoBehaviour
     public UnityEvent<float> onLifeDepleted; //vida agotada
     HurtCollider hurtCollider;
     private float currentLifePercentage;
+
+    PlayerCollect playerCollect;
+    Inventory inventory;
 
     [SerializeField] bool debugReceiveDamage;
 
@@ -43,19 +45,59 @@ public class Life : MonoBehaviour
     {
         this.currentLifePercentage = startLifePercentage;
 
-        //Cacheamos el hurtcollider
+        //Cacheamos el hurtcollider, el playercollect y el inventory
         this.hurtCollider = GetComponent<HurtCollider>();
+        this.playerCollect = GetComponent<PlayerCollect>();
+        this.inventory = GetComponent<Inventory>(); 
 
     }
 
     private void OnEnable()
     {
         this.hurtCollider.onHitReceive.AddListener(OnHitReceive);
+        this.playerCollect?.onCollectedObjectDirectUsage.AddListener(OnCollectedObjectDirectUsage);
+        this.inventory?.onObjectUsed.AddListener(OnObjectUsed);
     }
 
     private void OnDisable()
     {
         this.hurtCollider.onHitReceive.RemoveListener(OnHitReceive);
+        this.playerCollect?.onCollectedObjectDirectUsage.RemoveListener(OnCollectedObjectDirectUsage);
+        this.inventory?.onObjectUsed.RemoveListener(OnObjectUsed);
+    }
+
+
+
+    private void OnCollectedObjectDirectUsage(CollectableObject collectable)
+    {
+        InventoryInfo info = collectable.PropInventoryInfo;
+
+        UseInventoryInfo(info);
+
+    }
+
+    private void OnObjectUsed(InventoryInfo info)
+    {
+        UseInventoryInfo(info);
+    }
+
+    private void UseInventoryInfo(InventoryInfo info)
+    {
+        if (info.type == InventoryInfo.InventoryObjectType.Health)
+        {
+            //Controlamos que no superemos el 100% de vida
+            if (this.currentLifePercentage + info.recovery > 100f)
+            {
+                this.currentLifePercentage = 100;
+            }
+            else
+            {
+                this.currentLifePercentage += info.recovery;
+            }
+
+            //Actualizamos la barra de vida:
+            onLifeChanged.Invoke(this.currentLifePercentage, this.startLifePercentage);
+        }
     }
 
     private void Update()
@@ -107,28 +149,6 @@ public class Life : MonoBehaviour
                 }
             }
         }
-    }
-
-    private void OnLifeRecovery(string tagName)
-    {
-        //Si el carácter está en fase de recuperación, no hay que hacerle daño, salvo que sea una caída al vacío
-        if (tagName.Equals("MediumHeart"))
-        {
-            this.currentLifePercentage += this.mediumHeartPercentage;
-            
-        }
-        else if (tagName.Equals("FullHeart"))
-        {
-            this.currentLifePercentage += this.fullHeartPercentage;
-        }
-
-        //Controlamos que no hayamos superado el 100%
-        if (this.currentLifePercentage > 100f)
-        {
-            this.currentLifePercentage = 100;
-        }
-
-        onLifeChanged.Invoke(this.currentLifePercentage, this.startLifePercentage);
     }
 
 

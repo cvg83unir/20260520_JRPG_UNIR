@@ -147,8 +147,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Life
   startLifePercentage: 100
   damagePerHitPercentage: 30
-  mediumHeartPercentage: 0
-  fullHeartPercentage: 0
   recoverySecondsLimit: 0.5
   onLifeChanged:
     m_PersistentCalls:
@@ -226,6 +224,8 @@ GameObject:
   - component: {fileID: 5060186066023554439}
   - component: {fileID: 7042730260843828049}
   - component: {fileID: 4317452035013988895}
+  - component: {fileID: 3441753122148341171}
+  - component: {fileID: 1620517614924450777}
   m_Layer: 0
   m_Name: PlayerVisuals
   m_TagString: Untagged
@@ -330,6 +330,64 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3441753122148341171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6822866483777215593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08843ab6206e2fb4b91eeeff4e168da0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HitCollider
+--- !u!61 &1620517614924450777
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6822866483777215593}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.003019929, y: 0.68717897}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.76, y: 1.32}
+    newSize: {x: 0.3, y: 0.58}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.43989277, y: 1.2656422}
+  m_EdgeRadius: 0
 --- !u!1001 &5449981282125992204
 PrefabInstance:
   m_ObjectHideFlags: 0
