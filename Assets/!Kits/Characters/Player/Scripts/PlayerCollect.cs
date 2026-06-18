@@ -5,7 +5,9 @@ public class PlayerCollect : MonoBehaviour
 {
     [SerializeField] GameObject inventoryItemUIPrefab;
     [SerializeField] Transform itemsParent;
-    
+
+    [SerializeField] InventoryInfo[] startingObjects;
+
     public UnityEvent <CollectableObject>onCollectedObjectDirectUsage;
 
     Inventory inventory;
@@ -13,6 +15,11 @@ public class PlayerCollect : MonoBehaviour
     private void Awake()
     {
         this.inventory = GetComponent<Inventory>();
+
+        foreach(InventoryInfo startingObjectInvInfo in this.startingObjects)
+        {
+            AddObjectToInventory(startingObjectInvInfo);
+        }
     }
 
 
@@ -29,8 +36,7 @@ public class PlayerCollect : MonoBehaviour
                     break;
                 case InventoryInfo.UsageType.InInventory:
                     {
-                        GameObject newItem = Instantiate(inventoryItemUIPrefab, itemsParent);
-                        newItem.GetComponent<InventoryItem>().Initialize(this.inventory, collectable.PropInventoryInfo);
+                        AddObjectToInventory(collectable.PropInventoryInfo);
                     }
 
                     break;
@@ -41,5 +47,10 @@ public class PlayerCollect : MonoBehaviour
 
     }
 
+    private void AddObjectToInventory(InventoryInfo invInfo)
+    {
+        GameObject newItem = Instantiate(inventoryItemUIPrefab, itemsParent);
+        newItem.GetComponent<InventoryItem>().Initialize(this.inventory, invInfo);
+    }
 
 }
