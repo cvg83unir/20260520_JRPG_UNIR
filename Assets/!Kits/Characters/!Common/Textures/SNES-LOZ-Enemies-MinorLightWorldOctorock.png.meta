@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: be7c51dd0afc60f4ea5c99ca742e0c7d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6527287332658757585
+    second: SNES-LOZ-Enemies-MinorLightWorldOctorock_0
+  - first:
+      213: 5669880484681091279
+    second: SNES-LOZ-Enemies-MinorLightWorldOctorock_1
+  - first:
+      213: -6481254462538412491
+    second: SNES-LOZ-Enemies-MinorLightWorldOctorock_2
+  - first:
+      213: 4851173536481018389
+    second: SNES-LOZ-Enemies-MinorLightWorldOctorock_3
+  - first:
+      213: 1443657636118890439
+    second: SNES-LOZ-Enemies-MinorLightWorldOctorock_4
+  - first:
+      213: -142437879251986400
+    second: SNES-LOZ-Enemies-MinorLightWorldOctorock_5
+  - first:
+      213: -5546478144504403447
+    second: SNES-LOZ-Enemies-MinorLightWorldOctorock_6
+  - first:
+      213: -2349987331556272054
+    second: SNES-LOZ-Enemies-MinorLightWorldOctorock_7
+  - first:
+      213: -2506891542010435150
+    second: SNES-LOZ-Enemies-MinorLightWorldOctorock_8
+  - first:
+      213: -1014967316466389028
+    second: SNES-LOZ-Enemies-MinorLightWorldOctorock_9
+  - first:
+      213: -2560605091179439295
+    second: SNES-LOZ-Enemies-MinorLightWorldOctorock_10
+  - first:
+      213: 6050569220921822038
+    second: SNES-LOZ-Enemies-MinorLightWorldOctorock_11
+  - first:
+      213: -5901850569958313575
+    second: SNES-LOZ-Enemies-MinorLightWorldOctorock_12
+  - first:
+      213: -5143165232752473972
+    second: SNES-LOZ-Enemies-MinorLightWorldOctorock_13
+  - first:
+      213: 1632475227996969317
+    second: SNES-LOZ-Enemies-MinorLightWorldOctorock_14
+  - first:
+      213: 904712143410138738
+    second: SNES-LOZ-Enemies-MinorLightWorldOctorock_15
+  - first:
+      213: 664616818330249539
+    second: SNES-LOZ-Enemies-MinorLightWorldOctorock_16
+  - first:
+      213: -747657503532093643
+    second: SNES-LOZ-Enemies-MinorLightWorldOctorock_17
+  - first:
+      213: 301003096047243544
+    second: SNES-LOZ-Enemies-MinorLightWorldOctorock_18
+  - first:
+      213: 6486859402685077439
+    second: SNES-LOZ-Enemies-MinorLightWorldOctorock_19
+  - first:
+      213: -6399954769604223569
+    second: SNES-LOZ-Enemies-MinorLightWorldOctorock_20
+  - first:
+      213: 8290366838113957225
+    second: SNES-LOZ-Enemies-MinorLightWorldOctorock_21
+  - first:
+      213: 545311709142982011
+    second: SNES-LOZ-Enemies-MinorLightWorldOctorock_22
+  - first:
+      213: 8883548202401236108
+    second: SNES-LOZ-Enemies-MinorLightWorldOctorock_23
+  - first:
+      213: 6865832877263184267
+    second: SNES-LOZ-Enemies-MinorLightWorldOctorock_24
+  - first:
+      213: 3236834713293596723
+    second: SNES-LOZ-Enemies-MinorLightWorldOctorock_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 25
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SNES-LOZ-Enemies-MinorLightWorldOctorock_1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 48
+        width: 16
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc80650b2467fae40800000000000000
+      internalID: 5669880484681091279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-LOZ-Enemies-MinorLightWorldOctorock_5
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 48
+        width: 16
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02810a4e085f50ef0800000000000000
+      internalID: -142437879251986400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-LOZ-Enemies-MinorLightWorldOctorock_10
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 48
+        width: 16
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14b513a7c37e67cd0800000000000000
+      internalID: -2560605091179439295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-LOZ-Enemies-MinorLightWorldOctorock_14
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 48
+        width: 17
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56952651297b7a610800000000000000
+      internalID: 1632475227996969317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-LOZ-Enemies-MinorLightWorldOctorock_16
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 48
+        width: 16
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34923589971393900800000000000000
+      internalID: 664616818330249539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-LOZ-Enemies-MinorLightWorldOctorock_21
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 48
+        width: 16
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 965f57b07bc4d0370800000000000000
+      internalID: 8290366838113957225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-LOZ-Enemies-MinorLightWorldOctorock_22
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 7
+        width: 16
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7d145b3c16519700800000000000000
+      internalID: 545311709142982011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-LOZ-Enemies-MinorLightWorldOctorock_23
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 7
+        width: 16
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c848f25e504b84b70800000000000000
+      internalID: 8883548202401236108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-LOZ-Enemies-MinorLightWorldOctorock_25
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 7
+        width: 17
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 338a482b50c8bec20800000000000000
+      internalID: 3236834713293596723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-LOZ-Enemies-MinorLightWorldOctorock_26
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 12
+        width: 8
+        height: 8
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e0337dd8c8c404db5541e4496d2a1f
+      internalID: -1770075321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES-LOZ-Enemies-MinorLightWorldOctorock_27
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 7
+        width: 8
+        height: 4
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed43d0b6102a5948b44f149aad9a940
+      internalID: 1131968588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 845248e739db49f4990b4a3dc58afeff
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      SNES-LOZ-Enemies-MinorLightWorldOctorock_0: -6527287332658757585
+      SNES-LOZ-Enemies-MinorLightWorldOctorock_1: 5669880484681091279
+      SNES-LOZ-Enemies-MinorLightWorldOctorock_10: -2560605091179439295
+      SNES-LOZ-Enemies-MinorLightWorldOctorock_11: 6050569220921822038
+      SNES-LOZ-Enemies-MinorLightWorldOctorock_12: -5901850569958313575
+      SNES-LOZ-Enemies-MinorLightWorldOctorock_13: -5143165232752473972
+      SNES-LOZ-Enemies-MinorLightWorldOctorock_14: 1632475227996969317
+      SNES-LOZ-Enemies-MinorLightWorldOctorock_15: 904712143410138738
+      SNES-LOZ-Enemies-MinorLightWorldOctorock_16: 664616818330249539
+      SNES-LOZ-Enemies-MinorLightWorldOctorock_17: -747657503532093643
+      SNES-LOZ-Enemies-MinorLightWorldOctorock_18: 301003096047243544
+      SNES-LOZ-Enemies-MinorLightWorldOctorock_19: 6486859402685077439
+      SNES-LOZ-Enemies-MinorLightWorldOctorock_2: -6481254462538412491
+      SNES-LOZ-Enemies-MinorLightWorldOctorock_20: -6399954769604223569
+      SNES-LOZ-Enemies-MinorLightWorldOctorock_21: 8290366838113957225
+      SNES-LOZ-Enemies-MinorLightWorldOctorock_22: 545311709142982011
+      SNES-LOZ-Enemies-MinorLightWorldOctorock_23: 8883548202401236108
+      SNES-LOZ-Enemies-MinorLightWorldOctorock_24: 6865832877263184267
+      SNES-LOZ-Enemies-MinorLightWorldOctorock_25: 3236834713293596723
+      SNES-LOZ-Enemies-MinorLightWorldOctorock_26: -1770075321
+      SNES-LOZ-Enemies-MinorLightWorldOctorock_27: 1131968588
+      SNES-LOZ-Enemies-MinorLightWorldOctorock_28: 46653728
+      SNES-LOZ-Enemies-MinorLightWorldOctorock_3: 4851173536481018389
+      SNES-LOZ-Enemies-MinorLightWorldOctorock_4: 1443657636118890439
+      SNES-LOZ-Enemies-MinorLightWorldOctorock_5: -142437879251986400
+      SNES-LOZ-Enemies-MinorLightWorldOctorock_6: -5546478144504403447
+      SNES-LOZ-Enemies-MinorLightWorldOctorock_7: -2349987331556272054
+      SNES-LOZ-Enemies-MinorLightWorldOctorock_8: -2506891542010435150
+      SNES-LOZ-Enemies-MinorLightWorldOctorock_9: -1014967316466389028
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

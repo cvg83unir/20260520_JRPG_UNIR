@@ -16,8 +16,8 @@ TagManager:
   - EntryPoints
   - Interactable
   - Obstacle
-  - 
-  - 
+  - Enemies
+  - EnemyHitColliders
   - 
   - 
   - 
