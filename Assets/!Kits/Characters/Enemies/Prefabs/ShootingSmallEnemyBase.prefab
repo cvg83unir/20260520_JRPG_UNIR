@@ -58,6 +58,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2405726417211254753, guid: 3281923421eb22041a235b37370c9919,
+        type: 3}
+      propertyPath: m_TagString
+      value: EnemyShooterOctorok
+      objectReference: {fileID: 0}
     - target: {fileID: 2517589042581124917, guid: 3281923421eb22041a235b37370c9919,
         type: 3}
       propertyPath: m_Size.x
@@ -84,6 +89,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 22100000, guid: a18ce2c3221bad64aa205e7267903c0d,
         type: 2}
+    - target: {fileID: 5595339866134189916, guid: 3281923421eb22041a235b37370c9919,
+        type: 3}
+      propertyPath: radius
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6294162778944853391, guid: 3281923421eb22041a235b37370c9919,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -154,6 +164,22 @@ PrefabInstance:
         type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7468558247522368249, guid: 3281923421eb22041a235b37370c9919,
+        type: 3}
+      propertyPath: prefabAttack
+      value: 
+      objectReference: {fileID: 6794019517115419129, guid: c7338f335e01496489c2a338466cbc17,
+        type: 3}
+    - target: {fileID: 7468558247522368249, guid: 3281923421eb22041a235b37370c9919,
+        type: 3}
+      propertyPath: movementSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8588381350601216712, guid: 3281923421eb22041a235b37370c9919,
+        type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 600
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1620517614924450777, guid: 3281923421eb22041a235b37370c9919, type: 3}

@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -16,6 +17,8 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] private float blinkingSecondsInterval = 0.15f;
     private SpriteRenderer spriteRenderer;
     private Life life;
+
+    [SerializeField] float timeBetweenAttacks = 1f;
 
     private void Awake()
     {
@@ -37,6 +40,8 @@ public class PlayerControl : MonoBehaviour
         move.action.canceled += OnMove; //cada vez que finaliza una acción
 
         attack.action.Enable();
+        attack.action.started += OnAttack;
+
         showInventory.action.Enable();
         showInventory.action.started += OnPressInventoryButton;
 
@@ -44,6 +49,12 @@ public class PlayerControl : MonoBehaviour
         //y OnLifeDepleted (cuando la barra de vida llega a su fin)
         this.life.onLifeChanged.AddListener(OnLifeChanged);
         this.life.onLifeDepleted.AddListener(OnLifeDepleted);
+    }
+
+    private void OnAttack(InputAction.CallbackContext context)
+    {
+        //throw new NotImplementedException();
+        this.characterController.Attack();
     }
 
     private void OnPressInventoryButton(InputAction.CallbackContext context)
@@ -120,8 +131,10 @@ public class PlayerControl : MonoBehaviour
         move.action.performed -= OnMove;
 
         attack.action.Disable();
+        attack.action.started -= OnAttack;
         showInventory.action.Disable();
         showInventory.action.started -= OnPressInventoryButton;
+        
 
         //El jugador escuchará los eventos OnLifeChanged (cuando la barra de vida aumenta o dismunuye)
         //y OnLifeDepleted (cuando la barra de vida llega a su fin)

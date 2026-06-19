@@ -1,4 +1,4 @@
-using System;
+using System.Collections;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -16,14 +16,18 @@ public class Enemy : MonoBehaviour
 
     //El enemigo tendrá como estado por defecto Guarding
     State currentState = State.Guarding;
+    State previousState = State.Guarding;
     CharacterController2D characterController;
 
     Sight sight;
 
     private Life life;
 
+    [SerializeField] float timeBetweenAttacks = 1f;
+
     private void Awake()
     {
+        this.previousState = currentState;
         this.sight = GetComponent<Sight>();
         this.characterController = GetComponent<CharacterController2D>();
 
@@ -54,6 +58,8 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        this.previousState = this.currentState;
+
         switch (this.currentState)
         {
             case State.Guarding:
@@ -87,8 +93,18 @@ public class Enemy : MonoBehaviour
                     {
                         Vector2 searchDirection = (sight.VisiblesInSight[0].GetTransform().position - transform.position).normalized;
                         this.characterController.SetRawMove(searchDirection);
+
+                        if (this.gameObject.tag.StartsWith("EnemyShooter") && sight.VisiblesToShoot.Count>0)
+                        {
+                            this.currentState = State.Attacking;
+                            if (this.gameObject.tag.StartsWith("EnemyShooter") && this.previousState != this.currentState)
+                            {
+                                StartCoroutine(Shoot());
+                            }
+                            
+                        }
                     }
-                    catch(Exception)
+                    catch(System.Exception)
                     {
                         //Si no pudimos obtener la dirección a seguir (puede que el gameobject ya se haya destruido), volvemos
                         //al estado Guarding:
@@ -97,6 +113,16 @@ public class Enemy : MonoBehaviour
                 }
                 break;
             case State.Attacking:
+                //Si veo a alguien, paso al estado de Seeking:
+                if (sight.VisiblesToShoot.Count == 0)
+                {
+                    this.currentState = State.Guarding;
+                }
+                else
+                {
+                    Vector2 searchDirection = (sight.VisiblesInSight[0].GetTransform().position - transform.position).normalized;
+                    this.characterController.SetRawMove(searchDirection);
+                }
                 break;
             case State.BeingHit:
                 break;
@@ -104,7 +130,21 @@ public class Enemy : MonoBehaviour
                 break;
         }
 
+
+
     }
+
+    IEnumerator Shoot()
+    {
+        while (this.currentState == State.Attacking)
+        {
+            //Para que no todos los enemigos disparen exactamente a la vez, añadimos número
+            //aleatorio de menos de 1 segundo
+            this.characterController.Attack(); 
+            yield return new WaitForSeconds(this.timeBetweenAttacks + Random.Range(0f, 1f));
+        }
+    }
+
 
     private void OnLifeDepleted(float startLife)
     {

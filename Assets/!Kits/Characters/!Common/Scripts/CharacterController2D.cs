@@ -1,4 +1,6 @@
+using System;
 using UnityEditor.Experimental.GraphView;
+using UnityEditorInternal.Profiling.Memory.Experimental;
 using UnityEngine;
 
 public class CharacterController2D : MonoBehaviour, IVisible
@@ -12,6 +14,8 @@ public class CharacterController2D : MonoBehaviour, IVisible
 
     private bool walking;
 
+    [SerializeField] GameObject prefabAttack;
+
     private void Awake()
     {
         this.rb2D = GetComponent<Rigidbody2D>();
@@ -24,8 +28,17 @@ public class CharacterController2D : MonoBehaviour, IVisible
         this.rb2D.linearVelocity = rawMove * movementSpeed;
     }
 
-    Vector2 rawMove = Vector2.zero;
-    Vector2 previousRawMove = Vector2.zero;
+    private Vector2 rawMove = Vector2.zero;
+    private Vector2 previousRawMove = Vector2.zero;
+
+    /// <summary>
+    /// Propiedad de sólo lectura para que otros objetos sepan si estamos en tiempo de recuperación
+    /// </summary>
+    public Vector2 PreviousRawMove
+    {
+        get => this.previousRawMove;
+    }
+
     public void SetRawMove(Vector2 rawMove)
     {
         this.rawMove = rawMove;
@@ -46,8 +59,10 @@ public class CharacterController2D : MonoBehaviour, IVisible
 
         this.animator.SetBool("Walking", this.walking);
 
-
         this.previousRawMove = this.rawMove;
+        this.animator.SetFloat("AnimLastMoveX", this.previousRawMove.x);
+        this.animator.SetFloat("AnimLastMoveY", this.previousRawMove.y);
+
     }
 
     public IVisible.Side GetSide()
@@ -58,5 +73,17 @@ public class CharacterController2D : MonoBehaviour, IVisible
     public Transform GetTransform()
     {
         return transform;
+    }
+
+    internal void Attack()
+    {
+        this.animator.SetTrigger("Attack");
+
+        if (this.gameObject.tag.StartsWith("EnemyShooter"))
+        {
+            GameObject ataque = Instantiate(this.prefabAttack, transform.position, transform.rotation);
+
+            ataque.GetComponent<EnemyShoot>().setShotDirection(previousRawMove);
+        }
     }
 }
