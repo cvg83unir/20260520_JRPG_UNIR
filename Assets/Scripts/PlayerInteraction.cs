@@ -5,9 +5,12 @@ public class PlayerInteraction : MonoBehaviour
 {
     [Header("Interaction Detection")]
     [SerializeField] private Transform interactionPoint;
-    [SerializeField] private float interactionRadius = 0.5f;
+    [SerializeField] private float interactionRadius = 1f;
     [SerializeField] private LayerMask interactableLayer;
     [SerializeField] private LayerMask obstacleLayer;
+
+    [Header("Player Control")]
+    [SerializeField] private PlayerControl playerControl;
 
     private IInteractable currentInteractable;
 
@@ -15,7 +18,7 @@ public class PlayerInteraction : MonoBehaviour
     {
         CheckInteractable();
 
-        if (currentInteractable != null && Input.GetKeyDown(KeyCode.E))
+        if (currentInteractable != null && playerControl.ConsumeInteract())
         {
             currentInteractable.Interact();
         }

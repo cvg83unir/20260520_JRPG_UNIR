@@ -10,6 +10,7 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] InputActionReference move;
     [SerializeField] InputActionReference attack;
     [SerializeField] InputActionReference showInventory;
+    [SerializeField] InputActionReference interact;
     [SerializeField] GameObject canvasInventoryPanel;
     CharacterController2D characterController;
 
@@ -19,6 +20,8 @@ public class PlayerControl : MonoBehaviour
     private Life life;
 
     [SerializeField] float timeBetweenAttacks = 1f;
+
+    private bool interactPressed = false;
 
     private void Awake()
     {
@@ -45,6 +48,9 @@ public class PlayerControl : MonoBehaviour
         showInventory.action.Enable();
         showInventory.action.started += OnPressInventoryButton;
 
+        interact.action.Enable();
+        interact.action.started += OnInteract;
+
         //El jugador escuchará los eventos OnLifeChanged (cuando la barra de vida aumenta o dismunuye)
         //y OnLifeDepleted (cuando la barra de vida llega a su fin)
         this.life.onLifeChanged.AddListener(OnLifeChanged);
@@ -53,7 +59,6 @@ public class PlayerControl : MonoBehaviour
 
     private void OnAttack(InputAction.CallbackContext context)
     {
-        //throw new NotImplementedException();
         this.characterController.Attack();
     }
 
@@ -69,18 +74,9 @@ public class PlayerControl : MonoBehaviour
         }
     }
 
-
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void OnInteract(InputAction.CallbackContext context)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        interactPressed = true;
     }
 
     Vector2 rawMove = Vector2.zero;
@@ -132,14 +128,28 @@ public class PlayerControl : MonoBehaviour
 
         attack.action.Disable();
         attack.action.started -= OnAttack;
+
         showInventory.action.Disable();
         showInventory.action.started -= OnPressInventoryButton;
         
+        interact.action.Disable();
+        interact.action.started -= OnInteract;
 
         //El jugador escuchará los eventos OnLifeChanged (cuando la barra de vida aumenta o dismunuye)
         //y OnLifeDepleted (cuando la barra de vida llega a su fin)
         this.life.onLifeChanged.RemoveListener(OnLifeChanged);
         this.life.onLifeDepleted.RemoveListener(OnLifeDepleted);
 
+    }
+
+    public bool ConsumeInteract()
+    {
+        if (interactPressed == false)
+        {
+            return false;
+        }
+
+        interactPressed = false;
+        return true;
     }
 }
