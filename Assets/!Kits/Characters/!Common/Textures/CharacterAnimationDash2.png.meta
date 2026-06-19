@@ -1,0 +1,537 @@
+fileFormatVersion: 2
+guid: 58353b23177385845a7511d7d57562e9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7514522146324755895
+    second: CharacterAnimationDash2_0
+  - first:
+      213: 789795739492514338
+    second: CharacterAnimationDash2_1
+  - first:
+      213: 715375070518053231
+    second: CharacterAnimationDash2_2
+  - first:
+      213: -8191632845336103370
+    second: CharacterAnimationDash2_3
+  - first:
+      213: 6995439167236123845
+    second: CharacterAnimationDash2_4
+  - first:
+      213: -1201007693949503631
+    second: CharacterAnimationDash2_5
+  - first:
+      213: 4305699499983737773
+    second: CharacterAnimationDash2_6
+  - first:
+      213: -7694992307918935825
+    second: CharacterAnimationDash2_7
+  - first:
+      213: -5334278775401921686
+    second: CharacterAnimationDash2_8
+  - first:
+      213: -9027123289736628610
+    second: CharacterAnimationDash2_9
+  - first:
+      213: 7243935960139213167
+    second: CharacterAnimationDash2_10
+  - first:
+      213: 2927333699295155878
+    second: CharacterAnimationDash2_11
+  - first:
+      213: 1014437401852947645
+    second: CharacterAnimationDash2_12
+  - first:
+      213: 1832620059516030423
+    second: CharacterAnimationDash2_13
+  - first:
+      213: 7626096909537347234
+    second: CharacterAnimationDash2_14
+  - first:
+      213: 685054639667808660
+    second: CharacterAnimationDash2_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CharacterAnimationDash2_0
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 986
+        width: 125
+        height: 197
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94ac18bebed07b790800000000000000
+      internalID: -7514522146324755895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterAnimationDash2_1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 988
+        width: 166
+        height: 170
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22a71916a0be5fa00800000000000000
+      internalID: 789795739492514338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterAnimationDash2_2
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 988
+        width: 209
+        height: 160
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f69066f16d58de900800000000000000
+      internalID: 715375070518053231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterAnimationDash2_3
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 988
+        width: 245
+        height: 153
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 636b15b0459715e80800000000000000
+      internalID: -8191632845336103370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterAnimationDash2_4
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 704
+        width: 117
+        height: 185
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cca6f2fbdac41160800000000000000
+      internalID: 6995439167236123845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterAnimationDash2_5
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 707
+        width: 174
+        height: 174
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 177f0a59dd9255fe0800000000000000
+      internalID: -1201007693949503631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterAnimationDash2_6
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 707
+        width: 208
+        height: 165
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da39b16f1eae0cb30800000000000000
+      internalID: 4305699499983737773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterAnimationDash2_7
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 707
+        width: 246
+        height: 160
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe8e0290445e53590800000000000000
+      internalID: -7694992307918935825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterAnimationDash2_8
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 408
+        width: 112
+        height: 189
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a63434b47b5d8f5b0800000000000000
+      internalID: -5334278775401921686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterAnimationDash2_9
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 410
+        width: 171
+        height: 175
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e76b79b123739b280800000000000000
+      internalID: -9027123289736628610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterAnimationDash2_10
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 408
+        width: 196
+        height: 162
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f69a6cf2061a78460800000000000000
+      internalID: 7243935960139213167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterAnimationDash2_11
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 410
+        width: 244
+        height: 156
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a694856d7aff9820800000000000000
+      internalID: 2927333699295155878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterAnimationDash2_12
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 107
+        width: 111
+        height: 186
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbca0583171041e00800000000000000
+      internalID: 1014437401852947645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterAnimationDash2_13
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 107
+        width: 184
+        height: 187
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dd45b70c36ce6910800000000000000
+      internalID: 1832620059516030423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterAnimationDash2_14
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 107
+        width: 183
+        height: 179
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a68da30cb655d960800000000000000
+      internalID: 7626096909537347234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterAnimationDash2_15
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 107
+        width: 172
+        height: 177
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4990221b09dc18900800000000000000
+      internalID: 685054639667808660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1f72711ab1db24546b4c4a8bbc0a5c7b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceOnImport
+        value: False
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      CharacterAnimationDash2_0: -7514522146324755895
+      CharacterAnimationDash2_1: 789795739492514338
+      CharacterAnimationDash2_10: 7243935960139213167
+      CharacterAnimationDash2_11: 2927333699295155878
+      CharacterAnimationDash2_12: 1014437401852947645
+      CharacterAnimationDash2_13: 1832620059516030423
+      CharacterAnimationDash2_14: 7626096909537347234
+      CharacterAnimationDash2_15: 685054639667808660
+      CharacterAnimationDash2_2: 715375070518053231
+      CharacterAnimationDash2_3: -8191632845336103370
+      CharacterAnimationDash2_4: 6995439167236123845
+      CharacterAnimationDash2_5: -1201007693949503631
+      CharacterAnimationDash2_6: 4305699499983737773
+      CharacterAnimationDash2_7: -7694992307918935825
+      CharacterAnimationDash2_8: -5334278775401921686
+      CharacterAnimationDash2_9: -9027123289736628610
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

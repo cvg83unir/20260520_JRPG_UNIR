@@ -7303,6 +7303,12 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 815257590260941586, guid: 2be68844c5137d640908511749d4c3d8,
         type: 3}
+      propertyPath: dash
+      value: 
+      objectReference: {fileID: 7040659881675835329, guid: 2bcd2660ca9b64942af0de543d8d7100,
+        type: 3}
+    - target: {fileID: 815257590260941586, guid: 2be68844c5137d640908511749d4c3d8,
+        type: 3}
       propertyPath: interact
       value: 
       objectReference: {fileID: 1781555164194001046, guid: 2bcd2660ca9b64942af0de543d8d7100,
@@ -7366,6 +7372,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7215428408828099476, guid: 2be68844c5137d640908511749d4c3d8,
+        type: 3}
+      propertyPath: dashSpeed
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

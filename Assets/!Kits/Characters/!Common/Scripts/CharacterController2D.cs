@@ -16,6 +16,13 @@ public class CharacterController2D : MonoBehaviour, IVisible
 
     [SerializeField] GameObject prefabAttack;
 
+    [SerializeField] float dashSpeed = 20f;
+    [SerializeField] float dashDuration = 0.15f;
+    [SerializeField] float dashCooldown = 2f;
+
+    bool isDashing = false;
+    bool canDash = true;
+
     private void Awake()
     {
         this.rb2D = GetComponent<Rigidbody2D>();
@@ -25,7 +32,10 @@ public class CharacterController2D : MonoBehaviour, IVisible
     // Update is called once per frame
     void Update()
     {
-        this.rb2D.linearVelocity = rawMove * movementSpeed;
+        if (!isDashing)
+        {
+            this.rb2D.linearVelocity = rawMove * movementSpeed;
+        }
     }
 
     private Vector2 rawMove = Vector2.zero;
@@ -86,4 +96,45 @@ public class CharacterController2D : MonoBehaviour, IVisible
             ataque.GetComponent<EnemyShoot>().setShotDirection(previousRawMove);
         }
     }
+
+    internal void Dash()
+    {
+        Debug.Log("DASH ACTIVADO");
+        if (!canDash) return;
+        if (isDashing) return;
+
+        Vector2 dashDirection = rawMove;
+
+        if (dashDirection == Vector2.zero)
+        {
+            dashDirection = previousRawMove;
+        }
+
+        if (dashDirection == Vector2.zero) return;
+
+        canDash = false;
+        isDashing = true;
+
+        dashDirection = dashDirection.normalized;
+
+        rb2D.linearVelocity = dashDirection * dashSpeed;
+
+
+        animator.SetFloat("HorizontalVelocity", dashDirection.x);
+        animator.SetFloat("VerticalVelocity", dashDirection.y);
+        animator.SetTrigger("Dash");
+
+        Invoke(nameof(ResetDash), dashDuration);
+        Invoke(nameof(ResetDashCooldown), dashCooldown);
+    }
+
+    void ResetDash()
+    {
+        isDashing = false;
+    }
+    void ResetDashCooldown()
+    {
+        canDash = true;
+    }
+
 }

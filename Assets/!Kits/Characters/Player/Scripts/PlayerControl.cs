@@ -9,6 +9,7 @@ public class PlayerControl : MonoBehaviour
     [Header("CharacterActions")]
     [SerializeField] InputActionReference move;
     [SerializeField] InputActionReference attack;
+    [SerializeField] InputActionReference dash;
     [SerializeField] InputActionReference showInventory;
     [SerializeField] InputActionReference interact;
     [SerializeField] GameObject canvasInventoryPanel;
@@ -45,6 +46,9 @@ public class PlayerControl : MonoBehaviour
         attack.action.Enable();
         attack.action.started += OnAttack;
 
+        dash.action.Enable();
+        dash.action.started += OnDash;
+
         showInventory.action.Enable();
         showInventory.action.started += OnPressInventoryButton;
 
@@ -61,6 +65,12 @@ public class PlayerControl : MonoBehaviour
     {
         this.characterController.Attack();
     }
+
+    private void OnDash(InputAction.CallbackContext context)
+    {
+        characterController.Dash();
+    }
+
 
     private void OnPressInventoryButton(InputAction.CallbackContext context)
     {
@@ -128,6 +138,9 @@ public class PlayerControl : MonoBehaviour
 
         attack.action.Disable();
         attack.action.started -= OnAttack;
+
+        dash.action.Disable();
+        dash.action.started -= OnDash;
 
         showInventory.action.Disable();
         showInventory.action.started -= OnPressInventoryButton;
