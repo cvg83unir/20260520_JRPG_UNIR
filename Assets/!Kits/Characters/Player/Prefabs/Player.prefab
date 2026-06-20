@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &113592320156107383
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3972580811200768174}
+  m_Layer: 0
+  m_Name: InteractionPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3972580811200768174
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113592320156107383}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.584, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4729801259006960442}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2920882931774547754
 GameObject:
   m_ObjectHideFlags: 0
@@ -17,6 +48,7 @@ GameObject:
   - component: {fileID: 8252223276579608}
   - component: {fileID: 97102911223156773}
   - component: {fileID: 3123933799580331032}
+  - component: {fileID: 1906499527650939706}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -40,6 +72,7 @@ Transform:
   - {fileID: 9054821534409612704}
   - {fileID: 9060411540658898315}
   - {fileID: 2997724826473969762}
+  - {fileID: 3972580811200768174}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &2115493880989700047
@@ -104,7 +137,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &7215428408828099476
 MonoBehaviour:
@@ -122,7 +155,7 @@ MonoBehaviour:
   side: 0
   prefabAttack: {fileID: 2310877623762095234, guid: 82b4bcec7d8714f419fd5f4c5d8f85da,
     type: 3}
-  dashSpeed: 20
+  dashSpeed: 30
   dashDuration: 0.15
   dashCooldown: 2
   shootAttackPoint: {fileID: 2997724826473969762}
@@ -141,10 +174,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerControl
   move: {fileID: -1680190386980627800, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   attack: {fileID: 1120369429361536294, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  dash: {fileID: 0}
+  dash: {fileID: 7040659881675835329, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   showInventory: {fileID: -4896260165519664385, guid: 2bcd2660ca9b64942af0de543d8d7100,
     type: 3}
-  interact: {fileID: 0}
+  interact: {fileID: 1781555164194001046, guid: 2bcd2660ca9b64942af0de543d8d7100,
+    type: 3}
   canvasInventoryPanel: {fileID: 0}
   blinkingSecondsInterval: 0.15
   timeBetweenAttacks: 1
@@ -200,7 +234,9 @@ MonoBehaviour:
   inventoryItemUIPrefab: {fileID: 6426238291072535253, guid: 5d512d0576eced641b0d832e8726d918,
     type: 3}
   itemsParent: {fileID: 0}
-  startingObjects: []
+  startingObjects:
+  - {fileID: 11400000, guid: 25d569e206bd6d04ca5b3533f549ed20, type: 2}
+  - {fileID: 11400000, guid: 25d569e206bd6d04ca5b3533f549ed20, type: 2}
   onCollectedObjectDirectUsage:
     m_PersistentCalls:
       m_Calls: []
@@ -219,6 +255,27 @@ MonoBehaviour:
   onObjectUsed:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1906499527650939706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2920882931774547754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ee43737c33e615478d5677aec15e715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
+  interactionPoint: {fileID: 3972580811200768174}
+  interactionRadius: 0.8
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  playerControl: {fileID: 815257590260941586}
 --- !u!1 &3022913659670373383
 GameObject:
   m_ObjectHideFlags: 0
