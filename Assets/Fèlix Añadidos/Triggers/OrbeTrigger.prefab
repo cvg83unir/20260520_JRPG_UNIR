@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4209210485147599602}
   - component: {fileID: 3325281808414226301}
   - component: {fileID: 9153999999796248379}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: OrbeTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
