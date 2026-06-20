@@ -25,7 +25,7 @@ public class CharacterController2D : MonoBehaviour, IVisible
     bool canDash = true;
 
     [SerializeField] Collider2D playerCollider;
-    Collider2D[] enemyColliders;
+    [SerializeField] HurtCollider hurtCollider;
 
     public bool shootAttack = true;
 
@@ -131,11 +131,11 @@ public class CharacterController2D : MonoBehaviour, IVisible
         Vector2 dashDirection = rawMove;
 
         if (dashDirection == Vector2.zero)
-        {
             dashDirection = previousRawMove;
-        }
 
         if (dashDirection == Vector2.zero) return;
+
+        hurtCollider.enabled = false;
 
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
 
@@ -144,16 +144,13 @@ public class CharacterController2D : MonoBehaviour, IVisible
             Collider2D enemyCollider = enemy.GetComponent<Collider2D>();
 
             if (enemyCollider != null)
-            {
                 Physics2D.IgnoreCollision(playerCollider, enemyCollider, true);
-            }
         }
 
         canDash = false;
         isDashing = true;
 
         dashDirection = dashDirection.normalized;
-
         rb2D.linearVelocity = dashDirection * dashSpeed;
 
         animator.SetFloat("HorizontalVelocity", dashDirection.x);
@@ -166,6 +163,8 @@ public class CharacterController2D : MonoBehaviour, IVisible
 
     void ResetDash()
     {
+        hurtCollider.enabled = true;
+
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
 
         foreach (GameObject enemy in enemies)
@@ -173,13 +172,12 @@ public class CharacterController2D : MonoBehaviour, IVisible
             Collider2D enemyCollider = enemy.GetComponent<Collider2D>();
 
             if (enemyCollider != null)
-            {
                 Physics2D.IgnoreCollision(playerCollider, enemyCollider, false);
-            }
         }
 
         isDashing = false;
     }
+
     void ResetDashCooldown()
     {
         canDash = true;
