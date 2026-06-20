@@ -7,12 +7,17 @@ public class DoorInteractable : MonoBehaviour, IInteractable
 
     [Header("Door")]
     [SerializeField] private Animator animator;
+    [SerializeField] private Collider2D closedCollider;
+    [SerializeField] private Collider2D openCollider;
 
     private bool opened = false;
 
     private void Start()
     {
         HidePrompt();
+
+        openCollider.enabled = false;
+        closedCollider.enabled = true;
 
         if (animator == null)
             { animator = GetComponent<Animator>(); }
@@ -27,6 +32,9 @@ public class DoorInteractable : MonoBehaviour, IInteractable
         HidePrompt();
 
         animator.SetTrigger("Open");
+
+        openCollider.enabled = true;
+        closedCollider.enabled = false;
     }
 
     public void ShowPrompt()
