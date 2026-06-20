@@ -18,9 +18,10 @@ public class PlayerInteraction : MonoBehaviour
     {
         CheckInteractable();
 
-        if (currentInteractable != null && playerControl.ConsumeInteract())
+        if (playerControl.ConsumeInteract())
         {
-            currentInteractable.Interact();
+            if (currentInteractable != null)
+                { currentInteractable.Interact(); }
         }
     }
 
