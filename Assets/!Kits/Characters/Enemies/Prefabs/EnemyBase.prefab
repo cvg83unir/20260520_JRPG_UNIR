@@ -74,8 +74,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.5809857}
-  m_Size: {x: 0.5, y: 1.1466564}
+  m_Offset: {x: 0, y: 0.38701335}
+  m_Size: {x: 0.5, y: 0.75871164}
   m_Direction: 0
 --- !u!50 &2373388120689871956
 Rigidbody2D:
@@ -118,6 +118,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterController
   movementSpeed: 2
   side: 2
+  prefabAttack: {fileID: 0}
+  dashSpeed: 20
+  dashDuration: 0.15
+  dashCooldown: 2
+  shootAttackPoint: {fileID: 0}
+  playerCollider: {fileID: 0}
+  shootAttack: 1
 --- !u!114 &3525641491047422628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,6 +188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b3b34b47c7ca0b4c96a139d606b1024, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
+  timeBetweenAttacks: 1
 --- !u!1 &3921898501117519886
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,7 +384,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.006039858, y: 0.68717897}
+  m_Offset: {x: -0.006039858, y: 0.37019962}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -386,7 +394,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.5788071, y: 1.2656422}
+  m_Size: {x: 0.5788071, y: 0.63168335}
   m_EdgeRadius: 0
 --- !u!1001 &5449981282125992204
 PrefabInstance:
