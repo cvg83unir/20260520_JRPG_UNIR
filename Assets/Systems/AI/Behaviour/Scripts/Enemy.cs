@@ -1,4 +1,6 @@
+using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -25,6 +27,21 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] float timeBetweenAttacks = 1f;
 
+    public float PropTimeBetweenAttacks
+    {
+        get => this.timeBetweenAttacks;
+    }
+
+
+    private float timeSinceLastShotCorroutine = 0f;
+    private bool bIsInCoroutineShot = false;
+    private bool bTimeBetweenLastCoroutineShootCorrect = false;
+    public bool CanInstantiateShoot
+    {
+        get => (this.currentState == State.Attacking && this.bTimeBetweenLastCoroutineShootCorrect);
+    }
+
+
     private void Awake()
     {
         this.previousState = currentState;
@@ -33,6 +50,8 @@ public class Enemy : MonoBehaviour
 
         //Cacheamos el componente de vida
         this.life = GetComponent<Life>();
+
+        this.timeSinceLastShotCorroutine = timeBetweenAttacks;
     }
 
     private void OnEnable()
@@ -59,6 +78,16 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         this.previousState = this.currentState;
+
+        if (bIsInCoroutineShot == false)
+        {
+            this.timeSinceLastShotCorroutine += Time.deltaTime;
+            if (this.timeSinceLastShotCorroutine >= timeBetweenAttacks)
+            {
+                this.bTimeBetweenLastCoroutineShootCorrect = true;
+                this.timeSinceLastShotCorroutine = timeBetweenAttacks;
+            }
+        }
 
         switch (this.currentState)
         {
@@ -94,7 +123,7 @@ public class Enemy : MonoBehaviour
                         Vector2 searchDirection = (sight.VisiblesInSight[0].GetTransform().position - transform.position).normalized;
                         this.characterController.SetRawMove(searchDirection);
 
-                        if (this.gameObject.tag.StartsWith("EnemyShooter") && sight.VisiblesToShoot.Count > 0)
+                        if (this.gameObject.tag.StartsWith("EnemyShooter") && sight.VisiblesToShoot.Count > 0 && this.bTimeBetweenLastCoroutineShootCorrect)
                         {
                             this.currentState = State.Attacking;
                             if (this.gameObject.tag.StartsWith("EnemyShooter") && this.previousState != this.currentState)
@@ -104,7 +133,7 @@ public class Enemy : MonoBehaviour
 
                         }
                     }
-                    catch (System.Exception)
+                    catch (Exception)
                     {
                         //Si no pudimos obtener la dirección a seguir (puede que el gameobject ya se haya destruido), volvemos
                         //al estado Guarding:
@@ -120,8 +149,18 @@ public class Enemy : MonoBehaviour
                 }
                 else
                 {
-                    Vector2 searchDirection = (sight.VisiblesInSight[0].GetTransform().position - transform.position).normalized;
-                    this.characterController.SetRawMove(searchDirection);
+                    try
+                    {
+                        Vector2 searchDirection = (sight.VisiblesInSight[0].GetTransform().position - transform.position).normalized;
+                        this.characterController.SetRawMove(searchDirection);
+                    }
+                    catch (Exception)
+                    {
+                        //Si no pudimos obtener la dirección a seguir (puede que el gameobject ya se haya destruido), volvemos
+                        //al estado Guarding:
+                        this.currentState = State.Guarding;
+                    }
+
                 }
                 break;
             case State.BeingHit:
@@ -133,13 +172,24 @@ public class Enemy : MonoBehaviour
 
     IEnumerator Shoot()
     {
+        this.bIsInCoroutineShot = true;
+        this.timeSinceLastShotCorroutine = 0;
+        Debug.Log("Nueva Corutina: " + DateTime.Now.ToString("yyyyMMddHHmmss"));
+
         while (this.currentState == State.Attacking)
         {
+
             //Para que no todos los enemigos disparen exactamente a la vez, añadimos número
             //aleatorio de menos de 1 segundo
-            this.characterController.Attack(); 
-            yield return new WaitForSeconds(this.timeBetweenAttacks + Random.Range(0f, 1f));
+            //Debug.Log("Attack: " + DateTime.Now.ToString("yyyyMMddHHmmss"));
+            this.characterController.Attack();
+            //Debug.Log("Antes del yield: " + DateTime.Now.ToString("yyyyMMddHHmmss"));
+            yield return new WaitForSeconds(this.timeBetweenAttacks);
+            //Debug.Log("Superado tiempo de espera en coroutina: " + DateTime.Now.ToString("yyyyMMddHHmmss"));
+            //yield return new WaitForSeconds(this.timeBetweenAttacks + Random.Range(0f, 1f));
         }
+
+        this.bIsInCoroutineShot = false;
     }
 
 

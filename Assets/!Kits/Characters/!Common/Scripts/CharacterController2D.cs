@@ -96,8 +96,8 @@ public class CharacterController2D : MonoBehaviour, IVisible
     {
         this.animator.SetTrigger("Attack");
 
-        if (shootAttack)
-            { ShootOnAttackAnimation(); }
+        if (shootAttack && !this.gameObject.tag.StartsWith("EnemyShooter"))
+        { ShootOnAttackAnimation(); }
     }
 
     internal void ShootOnAttackAnimation()
@@ -114,9 +114,11 @@ public class CharacterController2D : MonoBehaviour, IVisible
 
         if (this.gameObject.tag.StartsWith("EnemyShooter"))
         {
+            Debug.Log("Instanciar Disparo Enemigo");
             GameObject ataque = Instantiate(this.prefabAttack, transform.position, transform.rotation);
 
             ataque.GetComponent<EnemyShoot>().setShotDirection(previousRawMove);
+            
         }
     }
 
