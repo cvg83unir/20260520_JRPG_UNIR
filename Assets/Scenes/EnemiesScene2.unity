@@ -750,7 +750,7 @@ PrefabInstance:
     - target: {fileID: 4080087520599108242, guid: 722f0ce13c206e1448e093d4193a5548,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5666901787350161660, guid: 722f0ce13c206e1448e093d4193a5548,
         type: 3}
@@ -1203,7 +1203,7 @@ PrefabInstance:
     - target: {fileID: 4326911167691635975, guid: ef98bf125f2484b4d84a8ad251f34467,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5347960876244012905, guid: ef98bf125f2484b4d84a8ad251f34467,
         type: 3}
@@ -2081,11 +2081,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShootingSmallEnemyBase
       objectReference: {fileID: 0}
-    - target: {fileID: 4309559807830036347, guid: dc916c8d6ad7e9d4a9478c2139814969,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5617432474995571989, guid: dc916c8d6ad7e9d4a9478c2139814969,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2135,16 +2130,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6272064401942413254, guid: dc916c8d6ad7e9d4a9478c2139814969,
-        type: 3}
-      propertyPath: radius
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 7898317537577286226, guid: dc916c8d6ad7e9d4a9478c2139814969,
-        type: 3}
-      propertyPath: timeBetweenAttacks
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2709,16 +2694,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MiniDragonEnemy
       objectReference: {fileID: 0}
-    - target: {fileID: 1977170975376479839, guid: 8fbec9682e43bbc428ae1d913e82598e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5558153037191422838, guid: 8fbec9682e43bbc428ae1d913e82598e,
-        type: 3}
-      propertyPath: timeBetweenAttacks
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7875619665804731441, guid: 8fbec9682e43bbc428ae1d913e82598e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2768,11 +2743,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8625565497303492322, guid: 8fbec9682e43bbc428ae1d913e82598e,
-        type: 3}
-      propertyPath: radius
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
