@@ -15,6 +15,7 @@ public class CharacterController2D : MonoBehaviour, IVisible
     private bool walking;
     [SerializeField] GameObject prefabAttack;
 
+    //Dash
     [SerializeField] float dashSpeed = 20f;
     [SerializeField] float dashDuration = 0.15f;
     [SerializeField] float dashCooldown = 2f;
@@ -26,6 +27,11 @@ public class CharacterController2D : MonoBehaviour, IVisible
 
     [SerializeField] Collider2D playerCollider;
     [SerializeField] HurtCollider hurtCollider;
+
+    // Ataque espada
+    [SerializeField] bool useSwordAttack;
+    [SerializeField] GameObject swordAttackPrefab;
+    [SerializeField] Transform swordAttackPoint;
 
     public bool shootAttack = true;
 
@@ -98,7 +104,10 @@ public class CharacterController2D : MonoBehaviour, IVisible
 
         if (shootAttack)
             { ShootOnAttackAnimation(); }
+
+            SwordOnAttackAnimation();
     }
+
 
     internal void ShootOnAttackAnimation()
     {
@@ -117,6 +126,53 @@ public class CharacterController2D : MonoBehaviour, IVisible
             GameObject ataque = Instantiate(this.prefabAttack, transform.position, transform.rotation);
 
             ataque.GetComponent<EnemyShoot>().setShotDirection(previousRawMove);
+        }
+    }
+
+    internal void SwordOnAttackAnimation()
+    {
+        if (this.gameObject.CompareTag("Player"))
+        {
+            Vector2 attackDirection = previousRawMove.normalized;
+
+            if (attackDirection == Vector2.zero)
+            {
+                attackDirection = Vector2.down;
+            }
+
+            Vector3 offset = new Vector3(attackDirection.x, attackDirection.y, 0f);
+
+            GameObject sword = Instantiate(
+                swordAttackPrefab,
+                transform.position + offset,
+                Quaternion.identity
+            );
+
+            SwordMovement swordMovement = sword.GetComponent<SwordMovement>();
+
+            if (swordMovement != null)
+            {
+                swordMovement.SetTarget(transform, offset);
+            }
+
+            Collider2D swordCollider = sword.GetComponent<Collider2D>();
+            Collider2D playerCollider = GetComponent<Collider2D>();
+
+            if (swordCollider != null && playerCollider != null)
+            {
+                Physics2D.IgnoreCollision(swordCollider, playerCollider, true);
+            }
+
+            Animator swordAnimator = sword.GetComponent<Animator>();
+
+            if (swordAnimator != null)
+            {
+                swordAnimator.SetFloat("HorizontalVelocity", attackDirection.x);
+                swordAnimator.SetFloat("VerticalVelocity", attackDirection.y);
+                swordAnimator.SetTrigger("SwordAttack");
+            }
+
+            Destroy(sword, 1f);
         }
     }
 
