@@ -32,7 +32,7 @@ public class Enemy : MonoBehaviour
         get => this.timeBetweenAttacks;
     }
 
-
+    //Variables para controlar que los enemigos disparen el número adecuado de veces de acuedo a la variable timeBetweenAttacks 
     private float timeSinceLastShotCorroutine = 0f;
     private bool bIsInCoroutineShot = false;
     private bool bTimeBetweenLastCoroutineShootCorrect = false;
@@ -174,7 +174,7 @@ public class Enemy : MonoBehaviour
     {
         this.bIsInCoroutineShot = true;
         this.timeSinceLastShotCorroutine = 0;
-        Debug.Log("Nueva Corutina: " + DateTime.Now.ToString("yyyyMMddHHmmss"));
+        //Debug.Log("Nueva Corutina: " + DateTime.Now.ToString("yyyyMMddHHmmss"));
 
         while (this.currentState == State.Attacking)
         {

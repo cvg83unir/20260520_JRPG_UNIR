@@ -133,13 +133,14 @@ PrefabInstance:
         type: 3}
     m_RemovedComponents:
     - {fileID: 8588381350601216712, guid: 3281923421eb22041a235b37370c9919, type: 3}
+    - {fileID: 5595339866134189916, guid: 3281923421eb22041a235b37370c9919, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2405726417211254753, guid: 3281923421eb22041a235b37370c9919,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4097246414504152789}
+      addedObject: {fileID: 6117268317287565104}
     - targetCorrespondingSourceObject: {fileID: 6822866483777215593, guid: 3281923421eb22041a235b37370c9919,
         type: 3}
       insertIndex: -1
@@ -151,7 +152,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1568189344711833966}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4097246414504152789
+--- !u!114 &6117268317287565104
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -160,10 +161,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3792462481817837199}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6517ae84ab286a545922e48327161e3d, type: 3}
+  m_Script: {fileID: 11500000, guid: 064e57f784997904caa2d443288aa5e2, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyPatrol
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyShooterPatrol
   maxSecondsSameDirection: 2
+  timeBetweenAttacks: 3
+  radiusToShoot: 5
+  attendedSides: 00000000
 --- !u!1 &5434968493079160071 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6822866483777215593, guid: 3281923421eb22041a235b37370c9919,

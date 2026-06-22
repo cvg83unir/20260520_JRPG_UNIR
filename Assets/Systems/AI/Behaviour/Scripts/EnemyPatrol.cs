@@ -124,7 +124,7 @@ public class EnemyPatrol : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D elOtro)
     {
-        Debug.Log("Enemigo ha colisionado con:" + elOtro.ToString());
+        //Debug.Log("Enemigo ha colisionado con:" + elOtro.ToString());
         this.changeDirectionDueToCollision = true;
     }
 
