@@ -50,6 +50,7 @@ GameObject:
   - component: {fileID: 3123933799580331032}
   - component: {fileID: 1906499527650939706}
   - component: {fileID: 212369280204453393}
+  - component: {fileID: 8503896302367131090}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -302,6 +303,19 @@ MonoBehaviour:
   swordColorIcon: {fileID: 0}
   magicDarkIcon: {fileID: 0}
   magicColorIcon: {fileID: 0}
+--- !u!114 &8503896302367131090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2920882931774547754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050b8d7e2db4b8145be0801e3ea65ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::keepObjectBetweenScenes
+  id: 0
 --- !u!1 &3022913659670373383
 GameObject:
   m_ObjectHideFlags: 0
