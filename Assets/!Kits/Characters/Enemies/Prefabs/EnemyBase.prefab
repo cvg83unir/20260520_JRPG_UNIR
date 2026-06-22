@@ -124,7 +124,10 @@ MonoBehaviour:
   dashCooldown: 2
   shootAttackPoint: {fileID: 0}
   playerCollider: {fileID: 0}
-  shootAttack: 1
+  hurtCollider: {fileID: 0}
+  useSwordAttack: 0
+  swordAttackPrefab: {fileID: 0}
+  swordAttackPoint: {fileID: 0}
 --- !u!114 &3525641491047422628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -418,6 +421,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LifeCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1988755338216224752, guid: d189a4a974aaabd4290a124d3eb3671b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2706525353041200270, guid: d189a4a974aaabd4290a124d3eb3671b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2706525353041200270, guid: d189a4a974aaabd4290a124d3eb3671b,
         type: 3}

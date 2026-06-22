@@ -7,6 +7,9 @@ using Random = UnityEngine.Random;
 public class EnemyShooterPatrol : MonoBehaviour
 {
     private CharacterController2D characterController;
+    [Header("BlinkAfterHit")]
+    [SerializeField] private float blinkingSecondsInterval = 0.15f;
+    private SpriteRenderer spriteRenderer;
     private Life life;
 
     //variables para controlar el cambio de sentido:
@@ -24,6 +27,7 @@ public class EnemyShooterPatrol : MonoBehaviour
     private float timeSinceLastShotCorroutine = 0f;
     private bool bIsInCoroutineShot = false;
     private bool bTimeBetweenLastCoroutineShootCorrect = false;
+    private bool bIsShooting = false;
     public bool CanInstantiateShoot
     {
         get => (this.bTimeBetweenLastCoroutineShootCorrect);
@@ -40,6 +44,10 @@ public class EnemyShooterPatrol : MonoBehaviour
         //Cacheamos el componente de character controller y de vida
         this.characterController = GetComponent<CharacterController2D>();
         this.life = GetComponent<Life>();
+
+        //Aunque, en este juego, el spriterender del personaje está en uno de sus gamebojects
+        //hijos, por ello debemos buscarlo con GetComponentsInChildren:
+        this.spriteRenderer = GetComponentsInChildren<SpriteRenderer>()[0];
 
         this.timeSinceLastShotCorroutine = timeBetweenAttacks;
     }
@@ -83,8 +91,11 @@ public class EnemyShooterPatrol : MonoBehaviour
             //Para que no todos los enemigos disparen exactamente a la vez, añadimos número
             //aleatorio de menos de 1 segundo
             Debug.Log("Attack: " + DateTime.Now.ToString("yyyyMMddHHmmss"));
-            //yield return new WaitForSeconds(0.25f);
+            
+            this.bIsShooting = true;
+            yield return new WaitForSeconds(0.25f);
             this.characterController.Attack();
+            this.bIsShooting = false;
             //Debug.Log("Antes del yield: " + DateTime.Now.ToString("yyyyMMddHHmmss"));
             yield return new WaitForSeconds(this.timeBetweenAttacks);
 
@@ -98,8 +109,9 @@ public class EnemyShooterPatrol : MonoBehaviour
 
     private void OnEnable()
     {
-        //De momento los enemigos simplemente escucharán al evento OnLifeDepleted (cuando la barra de vida llega a su fin)
+        //Estos enemigos escucharán el onLifeDepleted y onLifeChanged
         this.life.onLifeDepleted.AddListener(OnLifeDepleted);
+        this.life.onLifeChanged.AddListener(OnLifeChanged);
     }
 
 
@@ -111,8 +123,9 @@ public class EnemyShooterPatrol : MonoBehaviour
 
     private void OnDisable()
     {
-        //De momento los enemigos simplemente escucharán al evento OnLifeDepleted (cuando la barra de vida llega a su fin)
+        //Estos enemigos escucharán el onLifeDepleted y onLifeChanged
         this.life.onLifeDepleted.RemoveListener(OnLifeDepleted);
+        this.life.onLifeChanged.AddListener(OnLifeChanged);
     }
 
     private void OnLifeDepleted(float startLife)
@@ -131,7 +144,7 @@ public class EnemyShooterPatrol : MonoBehaviour
         {
             this.directionSecondsCounter += Time.deltaTime;
 
-            if (this.bIsInCoroutineShot == true)
+            if (this.bIsInCoroutineShot == true && this.bIsShooting == true)
             {
                 Debug.Log("Enemigo. Cambio de sentido para disparar hacia el player");
                 Vector2 searchDirection = (this.visiblesToShoot[0].GetTransform().position - transform.position).normalized;
@@ -208,6 +221,32 @@ public class EnemyShooterPatrol : MonoBehaviour
             {
                 this.visiblesToShoot.Add(visible);
             }
+        }
+    }
+
+    private void OnLifeChanged(float currentLife, float startLife)
+    {
+        if (currentLife > 0f)
+        {
+            //Comenzamos el parpadeo del personaje:
+            StartCoroutine(Blink());
+        }
+    }
+
+    private IEnumerator Blink()
+    {
+
+        while (this.life.Recovering)
+        {
+            //Si estamos en tiempo de recuperación, hacemos que el personaje parpadee, jugando con el cuarto parámetro del color del
+            //personaje, que es la transparencia.
+            this.spriteRenderer.color = new Color(1f, 1f, 1f, 0.5f);
+            yield return new WaitForSeconds(this.blinkingSecondsInterval);
+
+            //pasado el tiempo designado para el parpadeo, volvemos el color de nuestro personaje a su intensidad habitual.
+            this.spriteRenderer.color = new Color(1f, 1f, 1f, 1.0f);
+            yield return new WaitForSeconds(this.blinkingSecondsInterval);
+
         }
     }
 }

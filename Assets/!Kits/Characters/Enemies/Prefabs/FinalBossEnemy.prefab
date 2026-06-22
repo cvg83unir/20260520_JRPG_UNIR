@@ -129,8 +129,18 @@ PrefabInstance:
         type: 3}
       propertyPath: prefabAttack
       value: 
-      objectReference: {fileID: 6794019517115419129, guid: c7338f335e01496489c2a338466cbc17,
+      objectReference: {fileID: 6794019517115419129, guid: 89db57b582a7ca94b847a383580b81bd,
         type: 3}
+    - target: {fileID: 7898334034593652237, guid: 3281923421eb22041a235b37370c9919,
+        type: 3}
+      propertyPath: recoverySecondsLimit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7898334034593652237, guid: 3281923421eb22041a235b37370c9919,
+        type: 3}
+      propertyPath: damagePerHitPercentage
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8588381350601216712, guid: 3281923421eb22041a235b37370c9919, type: 3}
     - {fileID: 5595339866134189916, guid: 3281923421eb22041a235b37370c9919, type: 3}
@@ -164,6 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 064e57f784997904caa2d443288aa5e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyShooterPatrol
+  blinkingSecondsInterval: 0.15
   maxSecondsSameDirection: 2
   timeBetweenAttacks: 3
   radiusToShoot: 5
