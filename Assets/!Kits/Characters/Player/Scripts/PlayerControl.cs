@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -12,6 +10,7 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] InputActionReference dash;
     [SerializeField] InputActionReference showInventory;
     [SerializeField] InputActionReference interact;
+    [SerializeField] InputActionReference changeWeapon;
     [SerializeField] GameObject canvasInventoryPanel;
     CharacterController2D characterController;
 
@@ -23,10 +22,14 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] float timeBetweenAttacks = 1f;
 
     private bool interactPressed = false;
+    private bool canAttack = true;
+
+    private PlayerWeaponManager weaponManager;
 
     private void Awake()
     {
         this.characterController = GetComponent<CharacterController2D>();
+        this.weaponManager = GetComponent<PlayerWeaponManager>();
 
         //Cacheamos el componente de vida y el spriterenderer del personaje
         this.life = GetComponent<Life>();
@@ -55,6 +58,9 @@ public class PlayerControl : MonoBehaviour
         interact.action.Enable();
         interact.action.started += OnInteract;
 
+        changeWeapon.action.Enable();
+        changeWeapon.action.started += OnChangeWeapon;
+
         //El jugador escuchará los eventos OnLifeChanged (cuando la barra de vida aumenta o dismunuye)
         //y OnLifeDepleted (cuando la barra de vida llega a su fin)
         this.life.onLifeChanged.AddListener(OnLifeChanged);
@@ -63,7 +69,11 @@ public class PlayerControl : MonoBehaviour
 
     private void OnAttack(InputAction.CallbackContext context)
     {
+        if (!canAttack) return;
+
         this.characterController.Attack();
+
+        StartCoroutine(AttackCooldown());
     }
 
     private void OnDash(InputAction.CallbackContext context)
@@ -71,14 +81,18 @@ public class PlayerControl : MonoBehaviour
         characterController.Dash();
     }
 
+    private void OnChangeWeapon(InputAction.CallbackContext context)
+    {
+        weaponManager.ChangeWeapon();
+    }
 
     private void OnPressInventoryButton(InputAction.CallbackContext context)
     {
-        if(this.canvasInventoryPanel.activeSelf == false)
+        if (this.canvasInventoryPanel.activeSelf == false)
         {
             this.canvasInventoryPanel.SetActive(true);
         }
-        else 
+        else
         {
             this.canvasInventoryPanel.SetActive(false);
         }
@@ -122,6 +136,15 @@ public class PlayerControl : MonoBehaviour
         }
     }
 
+    private IEnumerator AttackCooldown()
+    {
+        canAttack = false;
+
+        yield return new WaitForSeconds(timeBetweenAttacks);
+
+        canAttack = true;
+    }
+
     private void OnLifeDepleted(float startLife)
     {
         //Destruimos el gameobject del enemigo
@@ -144,9 +167,12 @@ public class PlayerControl : MonoBehaviour
 
         showInventory.action.Disable();
         showInventory.action.started -= OnPressInventoryButton;
-        
+
         interact.action.Disable();
         interact.action.started -= OnInteract;
+
+        changeWeapon.action.Disable();
+        changeWeapon.action.started -= OnChangeWeapon;
 
         //El jugador escuchará los eventos OnLifeChanged (cuando la barra de vida aumenta o dismunuye)
         //y OnLifeDepleted (cuando la barra de vida llega a su fin)

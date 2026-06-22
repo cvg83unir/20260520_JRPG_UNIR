@@ -33,12 +33,13 @@ public class CharacterController2D : MonoBehaviour, IVisible
     [SerializeField] GameObject swordAttackPrefab;
     [SerializeField] Transform swordAttackPoint;
 
-    public bool shootAttack = true;
+    private PlayerWeaponManager weaponManager;
 
     private void Awake()
     {
         this.rb2D = GetComponent<Rigidbody2D>();
         this.animator = GetComponentInChildren<Animator>();
+        this.weaponManager = GetComponent<PlayerWeaponManager>();
     }
 
     // Update is called once per frame
@@ -100,18 +101,22 @@ public class CharacterController2D : MonoBehaviour, IVisible
 
     internal void Attack()
     {
-        this.animator.SetTrigger("Attack");
-
         //Si el gameobject es el player, se hará el ataque directamente en la función attack
         if(this.gameObject.CompareTag("Player"))
         {
-            if (shootAttack)
-            { ShootOnAttackAnimation(); }
-            else
-            {
-                SwordOnAttackAnimation();
-            }
+            if (weaponManager.GetCurrentWeapon() == WeaponType.None) return;
+
+            this.animator.SetTrigger("Attack");
+
+            if (weaponManager.GetCurrentWeapon() == WeaponType.Sword)
+                { SwordOnAttackAnimation(); }
+            else if (weaponManager.GetCurrentWeapon() == WeaponType.MagicProjectile)
+                { ShootOnAttackAnimation(); }
+
+            return;
         }
+
+        this.animator.SetTrigger("Attack");
     }
 
 

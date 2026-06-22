@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 777424869509943716}
   - component: {fileID: 7030955525658745054}
   - component: {fileID: 5712650975143509366}
-  - component: {fileID: 8472785220045681728}
+  - component: {fileID: 581818021093049757}
   - component: {fileID: 2881607610016940894}
   m_Layer: 8
   m_Name: Door
@@ -35,7 +35,6 @@ Transform:
   m_Children:
   - {fileID: 3680703785166762355}
   - {fileID: 4246940341931124503}
-  - {fileID: 7612923520495506184}
   - {fileID: 1549459812695926461}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -120,8 +119,8 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!60 &8472785220045681728
-PolygonCollider2D:
+--- !u!61 &581818021093049757
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -150,11 +149,11 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0117406845, y: 0.99845225}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -164,19 +163,8 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.18437499, y: 1.5625}
-      - {x: -0.35419846, y: 1.5085877}
-      - {x: -0.48329353, y: 1.4676052}
-      - {x: -0.578125, y: 1.2375}
-      - {x: -0.578125, y: 0}
-      - {x: 0.578125, y: 0}
-      - {x: 0.5930592, y: 1.2228217}
-      - {x: 0.478125, y: 1.4375}
-      - {x: 0.3122633, y: 1.5033618}
-      - {x: 0.15312499, y: 1.5625}
-  m_UseDelaunayMesh: 1
+  m_Size: {x: 2.0250587, y: 1.9969045}
+  m_EdgeRadius: 0
 --- !u!114 &2881607610016940894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,8 +179,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DoorInteractable
   doorCanvas: {fileID: 1283082118730135053}
   animator: {fileID: 5712650975143509366}
-  closedCollider: {fileID: 6993334620974576419}
-  openCollider: {fileID: 3885308645720609963}
+  closedCollider: {fileID: 581818021093049757}
+  openCollider: {fileID: 8842931006010113424}
 --- !u!1 &5720443805258638326
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,8 +191,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1549459812695926461}
   - component: {fileID: 6715309508810976616}
-  - component: {fileID: 2070104520168176421}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: DoorFrame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -285,64 +272,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
---- !u!60 &2070104520168176421
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5720443805258638326}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.25, y: 0.25}
-    oldSize: {x: 2, y: 2}
-    newSize: {x: 2, y: 2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.5, y: 1.5}
-      - {x: -0.5, y: -0.5}
-      - {x: -0.09250736, y: -0.5}
-      - {x: -0.07642317, y: 0.82694423}
-      - {x: 0.14676571, y: 1.0185654}
-      - {x: 0.4900117, y: 1.0557702}
-      - {x: 0.89013195, y: 0.9890926}
-      - {x: 1.0740337, y: 0.73287576}
-      - {x: 1.0633597, y: -0.4949134}
-      - {x: 1.5, y: -0.5}
-      - {x: 1.5, y: 1.5}
-  m_UseDelaunayMesh: 1
 --- !u!1 &7422392396912615393
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,7 +281,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4246940341931124503}
-  - component: {fileID: 3885308645720609963}
+  - component: {fileID: 8842931006010113424}
   m_Layer: 8
   m_Name: OpenDoor
   m_TagString: Untagged
@@ -375,8 +304,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 777424869509943716}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!68 &3885308645720609963
-EdgeCollider2D:
+--- !u!60 &8842931006010113424
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -410,86 +339,6 @@ EdgeCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.578097, y: 0.0054756403}
-  - {x: -0.581334, y: 1.2414409}
-  - {x: -0.41911906, y: 1.4653906}
-  - {x: -0.03257221, y: 1.5890487}
-  - {x: 0.41593885, y: 1.4690113}
-  - {x: 0.5750759, y: 1.2463872}
-  - {x: 0.57262194, y: 0.0054756403}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
---- !u!1 &9036525471956606127
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7612923520495506184}
-  - component: {fileID: 6993334620974576419}
-  m_Layer: 8
-  m_Name: CloseDoor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7612923520495506184
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9036525471956606127}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 777424869509943716}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &6993334620974576419
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9036525471956606127}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: -0.0023932457, y: 0.7895759}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -499,8 +348,20 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.1579504, y: 1.5644397}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.99145603, y: 2.0115528}
+      - {x: -1.0008144, y: 0.01951304}
+      - {x: -0.57651085, y: 0.019636929}
+      - {x: -0.5734576, y: 1.237251}
+      - {x: -0.4140234, y: 1.4593594}
+      - {x: -0.041040897, y: 1.591654}
+      - {x: 0.40454292, y: 1.4674529}
+      - {x: 0.5738239, y: 1.2546912}
+      - {x: 0.56863165, y: 0.024770737}
+      - {x: 1.004736, y: 0.023179293}
+      - {x: 1.0095925, y: 2.0012321}
+  m_UseDelaunayMesh: 1
 --- !u!1001 &5446763164182282708
 PrefabInstance:
   m_ObjectHideFlags: 0

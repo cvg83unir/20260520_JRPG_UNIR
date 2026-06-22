@@ -1,4 +1,4 @@
-using System;
+
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,6 +14,8 @@ public class InventoryItem : MonoBehaviour
 
     Inventory inventory;
     InventoryInfo inventoryInfo;
+
+    
 
     private void OnEnable()
     {
@@ -59,5 +61,16 @@ public class InventoryItem : MonoBehaviour
         this.remainingUseCountText.text = inventoryInfo.remainingUseCount.ToString();
         this.image.sprite = invInfo.spriteImage;
 
+    }
+
+    public void addUsage(int usages)
+    {
+        this.inventoryInfo.remainingUseCount+=usages;
+        this.remainingUseCountText.text = this.inventoryInfo.remainingUseCount.ToString();
+    }
+
+    public bool compareItem(InventoryInfo ii)
+    {
+        return (ii.spriteImage == inventoryInfo.spriteImage) && (ii.infoText == inventoryInfo.infoText);
     }
 }

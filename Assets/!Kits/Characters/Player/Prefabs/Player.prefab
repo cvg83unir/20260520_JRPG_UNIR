@@ -49,6 +49,7 @@ GameObject:
   - component: {fileID: 97102911223156773}
   - component: {fileID: 3123933799580331032}
   - component: {fileID: 1906499527650939706}
+  - component: {fileID: 212369280204453393}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -159,7 +160,11 @@ MonoBehaviour:
   dashDuration: 0.15
   dashCooldown: 2
   shootAttackPoint: {fileID: 2997724826473969762}
-  shootAttack: 1
+  playerCollider: {fileID: 2115493880989700047}
+  hurtCollider: {fileID: 966647317132659711}
+  useSwordAttack: 1
+  swordAttackPrefab: {fileID: 0}
+  swordAttackPoint: {fileID: 2997724826473969762}
 --- !u!114 &815257590260941586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,9 +184,11 @@ MonoBehaviour:
     type: 3}
   interact: {fileID: 1781555164194001046, guid: 2bcd2660ca9b64942af0de543d8d7100,
     type: 3}
+  changeWeapon: {fileID: 54101551842282895, guid: 2bcd2660ca9b64942af0de543d8d7100,
+    type: 3}
   canvasInventoryPanel: {fileID: 0}
   blinkingSecondsInterval: 0.15
-  timeBetweenAttacks: 1
+  timeBetweenAttacks: 0.5
 --- !u!114 &966647317132659711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,6 +283,25 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   playerControl: {fileID: 815257590260941586}
+--- !u!114 &212369280204453393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2920882931774547754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eae0aef203168547bd29651b5a6fd42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerWeaponManager
+  hasSword: 0
+  hasMagicProjectile: 0
+  currentWeapon: 0
+  swordDarkIcon: {fileID: 0}
+  swordColorIcon: {fileID: 0}
+  magicDarkIcon: {fileID: 0}
+  magicColorIcon: {fileID: 0}
 --- !u!1 &3022913659670373383
 GameObject:
   m_ObjectHideFlags: 0
