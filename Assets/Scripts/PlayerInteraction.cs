@@ -38,6 +38,8 @@ public class PlayerInteraction : MonoBehaviour
             ClearCurrentInteractable();
             return;
         }
+        else
+        { Debug.Log(hit.gameObject.name); }
 
         if (!CanSeeInteractable(hit))
         {
