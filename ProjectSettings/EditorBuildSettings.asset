@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestScenes/PuzzleTestScene.unity
     guid: 6dfb1b7a259ecbf4dad683b3a1c82251
+  - enabled: 1
+    path: Assets/Scenes/Dungeon3.unity
+    guid: df08bda3c9113d842bbd810c59aae0bc
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

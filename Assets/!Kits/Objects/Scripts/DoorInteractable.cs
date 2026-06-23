@@ -10,6 +10,7 @@ public class DoorInteractable : MonoBehaviour, IInteractable
     [SerializeField] private Collider2D closedCollider;
     [SerializeField] private Collider2D open1Collider;
     [SerializeField] private Collider2D open2Collider;
+    [SerializeField] bool startOpened;
 
     [Header("Access")]
     [SerializeField] private InventoryInfo keyInventoryInfo;
@@ -21,12 +22,26 @@ public class DoorInteractable : MonoBehaviour, IInteractable
     {
         HidePrompt();
 
-        open1Collider.enabled = false;
-        open2Collider.enabled = false;
-        closedCollider.enabled = true;
-
         if (animator == null)
             { animator = GetComponent<Animator>(); }
+
+        if (startOpened)
+        {
+            opened = true;
+
+            animator.SetTrigger("Open");
+            animator.SetBool("IsOpen", true);
+
+            open1Collider.enabled = true;
+            open2Collider.enabled = true;
+            closedCollider.enabled = false;
+        }
+        else
+        {
+            open1Collider.enabled = false;
+            open2Collider.enabled = false;
+            closedCollider.enabled = true;
+        }
     }
 
     public void Interact()
