@@ -8,4 +8,10 @@ AnimatorOverrideController:
   m_PrefabAsset: {fileID: 0}
   m_Name: DoorDungeon
   m_Controller: {fileID: 9100000, guid: 3aa7496e4be76ab4fafe2336f92f401e, type: 2}
-  m_Clips: []
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 3e60cbb75fff15542ae9f6a48c2c03ab, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e261e2179ab42a5408f79155d1fa0080, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: d65873a1e40f31b41bf10762233fa624, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6fd882e79bf082542975c51b7d658a43, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 1ff011a13a4555d40b243b5520d3c9e9, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 187572f69131bfd4a8ad38484486084a, type: 2}
