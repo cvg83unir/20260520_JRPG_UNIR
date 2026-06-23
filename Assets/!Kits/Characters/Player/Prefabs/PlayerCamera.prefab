@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7347232549407242313}
   - component: {fileID: 3182742448439152066}
-  - component: {fileID: 5169056278801054230}
   - component: {fileID: 2981597272204714965}
+  - component: {fileID: 5169056278801054230}
   m_Layer: 0
   m_Name: PlayerCamera
   m_TagString: Untagged
@@ -77,19 +77,6 @@ MonoBehaviour:
       BarrelClipping: 0.25
       Anamorphism: 0
   BlendHint: 0
---- !u!114 &5169056278801054230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6083993634253172652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 050b8d7e2db4b8145be0801e3ea65ec5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::keepObjectBetweenScenes
-  id: 2
 --- !u!114 &2981597272204714965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,3 +108,16 @@ MonoBehaviour:
     Time: 0.14
     Smoothing: 1.5
     IgnoreY: 0
+--- !u!114 &5169056278801054230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6083993634253172652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050b8d7e2db4b8145be0801e3ea65ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::keepObjectBetweenScenes
+  id: 2

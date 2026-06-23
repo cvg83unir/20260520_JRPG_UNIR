@@ -32,6 +32,7 @@ public class CharacterController2D : MonoBehaviour, IVisible
     [SerializeField] bool useSwordAttack;
     [SerializeField] GameObject swordAttackPrefab;
     [SerializeField] Transform swordAttackPoint;
+    bool swordActive = false;
 
     private PlayerWeaponManager weaponManager;
 
@@ -144,8 +145,12 @@ public class CharacterController2D : MonoBehaviour, IVisible
 
     internal void SwordOnAttackAnimation()
     {
+        if (swordActive) return;
+
         if (this.gameObject.CompareTag("Player"))
         {
+            swordActive = true;
+
             Vector2 attackDirection = previousRawMove.normalized;
 
             if (attackDirection == Vector2.zero)
@@ -186,7 +191,13 @@ public class CharacterController2D : MonoBehaviour, IVisible
             }
 
             Destroy(sword, 1f);
+
+            Invoke(nameof(ResetSwordAttack), 1f);
         }
+    }
+    void ResetSwordAttack()
+    {
+        swordActive = false;
     }
 
 
