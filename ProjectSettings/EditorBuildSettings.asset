@@ -6,25 +6,22 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/InitScene.unity
+    guid: b5a9bc307654a3049b2575f9d7552a93
+  - enabled: 1
     path: Assets/Scenes/OverWorld.unity
     guid: a79cdce06758bb444a13e1ec5fc88f7a
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
-    path: Assets/Scenes/TestScenes/EscenaVacia.unity
-    guid: 92003cfdfefaae54bb3a16c863992c7d
-  - enabled: 1
-    path: Assets/Scenes/TestScenes/PuzzleTestScene.unity
-    guid: 6dfb1b7a259ecbf4dad683b3a1c82251
-  - enabled: 1
-    path: Assets/Scenes/DungeonC/Dungeon3.unity
-    guid: df08bda3c9113d842bbd810c59aae0bc
+    path: Assets/Scenes/DungeonC/Dungeon1.unity
+    guid: f924cb790b014234dabf61c6ff62c8df
   - enabled: 1
     path: Assets/Scenes/DungeonC/Dungeon2.unity
     guid: 722f063f1abde4b46a8ac7a378c9eeed
   - enabled: 1
-    path: Assets/Scenes/DungeonC/Dungeon1.unity
-    guid: f924cb790b014234dabf61c6ff62c8df
+    path: Assets/Scenes/DungeonC/Dungeon3.unity
+    guid: df08bda3c9113d842bbd810c59aae0bc
+  - enabled: 1
+    path: Assets/Scenes/DungeonC/Dungeon4.unity
+    guid: 47e831dd412ae9b49ada3bbcea4ca3ff
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

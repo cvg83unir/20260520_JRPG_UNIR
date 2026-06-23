@@ -147,8 +147,8 @@ public class PlayerControl : MonoBehaviour
 
     private void OnLifeDepleted(float startLife)
     {
-        //Destruimos el gameobject del enemigo
-        Destroy(this.gameObject);
+        //Destruimos el gameobject del player
+        //Destroy(this.gameObject);
     }
 
     private void OnDisable()
