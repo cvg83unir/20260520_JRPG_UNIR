@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class SceneTransition : MonoBehaviour
 {
     [Header("Scene")]
     [SerializeField] private string sceneToLoad;
@@ -16,6 +16,11 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
         onBeforeSceneLoad?.Invoke();
 
+        ChangeScene();
+    }
+
+    public void ChangeScene()
+    {
         SceneManager.LoadScene(sceneToLoad);
     }
 }

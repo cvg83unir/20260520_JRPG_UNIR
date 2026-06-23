@@ -32,8 +32,14 @@ public class keepObjectBetweenScenes : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
-    private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1)
+    private void OnSceneLoaded(Scene sc, LoadSceneMode arg1)
     {
+        
+        if(sc.buildIndex == 0)
+        {
+            CollectiveSuicide();
+            return;
+        }
         Debug.Log("escena cargada");
         if (CompareTag("Player"))
         {
@@ -49,6 +55,15 @@ public class keepObjectBetweenScenes : MonoBehaviour
                 transform.position = Vector2.zero;
             }
         }
+    }
+
+    private void CollectiveSuicide()
+    {
+        foreach(GameObject go in gameobjectsSaved)
+        {
+            if (go != gameObject && go) Destroy(go);
+        }
+        Destroy(gameObject);
     }
 
     
