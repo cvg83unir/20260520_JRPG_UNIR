@@ -164,7 +164,8 @@ MonoBehaviour:
   playerCollider: {fileID: 2115493880989700047}
   hurtCollider: {fileID: 966647317132659711}
   useSwordAttack: 1
-  swordAttackPrefab: {fileID: 0}
+  swordAttackPrefab: {fileID: 790943175446045603, guid: 8a07da19c97c12944a5ff1a0179c333b,
+    type: 3}
   swordAttackPoint: {fileID: 2997724826473969762}
 --- !u!114 &815257590260941586
 MonoBehaviour:
@@ -180,7 +181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerControl
   move: {fileID: -1680190386980627800, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   attack: {fileID: 1120369429361536294, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  dash: {fileID: 7040659881675835329, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  dash: {fileID: -7471211009204490832, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   showInventory: {fileID: -4896260165519664385, guid: 2bcd2660ca9b64942af0de543d8d7100,
     type: 3}
   interact: {fileID: 1781555164194001046, guid: 2bcd2660ca9b64942af0de543d8d7100,
