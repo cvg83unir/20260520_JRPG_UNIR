@@ -7,14 +7,12 @@ public class EnemyGenerator : MonoBehaviour
     [SerializeField] float timeBetweenEnemies = 2.5f;
     [SerializeField] int maxEnemiesAlive = 3;
 
-    private BattleZone battleZone;
     private bool generating = false;
     private int enemiesAlive = 0;
     private Coroutine generateCoroutine;
 
     public void StartGenerating(BattleZone battleZone)
     {
-        this.battleZone = battleZone;
         this.generating = true;
 
         if (generateCoroutine == null)

@@ -28303,7 +28303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e699087ae945d1c44be007c3d55e720a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikesTileMapScript
-  timeInterval: 3
+  timeInterval: 2
   loopActivation: 1
 --- !u!483693784 &879444929
 TilemapRenderer:
@@ -29352,7 +29352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e699087ae945d1c44be007c3d55e720a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpikesTileMapScript
-  timeInterval: 3
+  timeInterval: 2
   loopActivation: 1
 --- !u!483693784 &1047415169
 TilemapRenderer:
