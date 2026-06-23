@@ -82,12 +82,12 @@ PrefabInstance:
     - target: {fileID: 6294162778944853391, guid: 3281923421eb22041a235b37370c9919,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.1241007
+      value: 7.12
       objectReference: {fileID: 0}
     - target: {fileID: 6294162778944853391, guid: 3281923421eb22041a235b37370c9919,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.104076
+      value: -2.02
       objectReference: {fileID: 0}
     - target: {fileID: 6294162778944853391, guid: 3281923421eb22041a235b37370c9919,
         type: 3}
@@ -102,17 +102,17 @@ PrefabInstance:
     - target: {fileID: 6294162778944853391, guid: 3281923421eb22041a235b37370c9919,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6294162778944853391, guid: 3281923421eb22041a235b37370c9919,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6294162778944853391, guid: 3281923421eb22041a235b37370c9919,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6294162778944853391, guid: 3281923421eb22041a235b37370c9919,
         type: 3}
@@ -135,6 +135,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3579915946031266897, guid: f45be393654fb544c95c35b9bdd4c808,
         type: 3}
+    - target: {fileID: 7898334034593652237, guid: 3281923421eb22041a235b37370c9919,
+        type: 3}
+      propertyPath: damagePerHitPercentage
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8588381350601216712, guid: 3281923421eb22041a235b37370c9919, type: 3}
     m_RemovedGameObjects: []
@@ -163,6 +168,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6517ae84ab286a545922e48327161e3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyPatrol
-  maxXValue: 5
-  maxYValue: 5
   maxSecondsSameDirection: 2
