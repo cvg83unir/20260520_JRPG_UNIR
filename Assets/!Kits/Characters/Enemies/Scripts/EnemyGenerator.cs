@@ -32,11 +32,6 @@ public class EnemyGenerator : MonoBehaviour
         }
     }
 
-    public void EnemyDestroyed()
-    {
-        enemiesAlive--;
-    }
-
     IEnumerator GenerateEnemies()
     {
         while (generating)
