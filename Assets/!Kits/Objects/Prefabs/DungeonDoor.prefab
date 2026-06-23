@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3273953503965212221
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 581818021093049757, guid: 6472b7e7c624d6e458d69e87f69f547d,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 581818021093049757, guid: 6472b7e7c624d6e458d69e87f69f547d,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 777424869509943716, guid: 6472b7e7c624d6e458d69e87f69f547d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 777424869509943716, guid: 6472b7e7c624d6e458d69e87f69f547d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 777424869509943716, guid: 6472b7e7c624d6e458d69e87f69f547d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 777424869509943716, guid: 6472b7e7c624d6e458d69e87f69f547d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 777424869509943716, guid: 6472b7e7c624d6e458d69e87f69f547d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 777424869509943716, guid: 6472b7e7c624d6e458d69e87f69f547d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 777424869509943716, guid: 6472b7e7c624d6e458d69e87f69f547d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 777424869509943716, guid: 6472b7e7c624d6e458d69e87f69f547d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 777424869509943716, guid: 6472b7e7c624d6e458d69e87f69f547d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 777424869509943716, guid: 6472b7e7c624d6e458d69e87f69f547d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5029616502434586688, guid: 6472b7e7c624d6e458d69e87f69f547d,
+        type: 3}
+      propertyPath: m_Name
+      value: DungeonDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5712650975143509366, guid: 6472b7e7c624d6e458d69e87f69f547d,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 818a7d9b11358bc49acf43ef618c5284,
+        type: 2}
+    - target: {fileID: 5720443805258638326, guid: 6472b7e7c624d6e458d69e87f69f547d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7030955525658745054, guid: 6472b7e7c624d6e458d69e87f69f547d,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -790353330201334856, guid: 5bc43fe1b750f5f4b98e7dc508af9e4a,
+        type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6472b7e7c624d6e458d69e87f69f547d, type: 3}
