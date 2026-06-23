@@ -128,6 +128,10 @@ MonoBehaviour:
   useSwordAttack: 0
   swordAttackPrefab: {fileID: 0}
   swordAttackPoint: {fileID: 0}
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  swordWallCheckDistance: 1
 --- !u!114 &3525641491047422628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,7 +160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Life
   startLifePercentage: 100
-  damagePerHitPercentage: 30
+  damagePerHitPercentage: 33.34
   recoverySecondsLimit: 0.5
   onLifeChanged:
     m_PersistentCalls:

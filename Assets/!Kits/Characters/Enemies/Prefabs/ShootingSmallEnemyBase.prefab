@@ -176,6 +176,11 @@ PrefabInstance:
       propertyPath: movementSpeed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7898334034593652237, guid: 3281923421eb22041a235b37370c9919,
+        type: 3}
+      propertyPath: damagePerHitPercentage
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 8588381350601216712, guid: 3281923421eb22041a235b37370c9919,
         type: 3}
       propertyPath: timeBetweenAttacks
