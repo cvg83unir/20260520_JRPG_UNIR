@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class SpikesScript : MonoBehaviour
 {
-    HitCollider hitCollider;
+    BoxCollider2D boxCollider2D;
+
     Animator animator;
+
 
     
     #region variables de tiempo y funcionamiento
@@ -20,7 +22,7 @@ public class SpikesScript : MonoBehaviour
     
     private void Awake()
     {
-        hitCollider = GetComponent<HitCollider>();
+        boxCollider2D = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
         setDamageActive(0);
     }
@@ -63,8 +65,8 @@ public class SpikesScript : MonoBehaviour
     }
     public void setDamageActive(int activarHit)
     {
-        
-        hitCollider.enabled = activarHit!=0;
+
+        boxCollider2D.enabled = activarHit!=0;
     }
     
 

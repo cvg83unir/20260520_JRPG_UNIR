@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class keepObjectBetweenScenes : MonoBehaviour
 {
@@ -7,7 +9,11 @@ public class keepObjectBetweenScenes : MonoBehaviour
     public int id = 0;
     private void Awake()
     {
-        if(gameobjectsSaved[id] == null)
+        if (CompareTag("Player"))
+        {
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+            if (gameobjectsSaved[id] == null)
         {
             gameobjectsSaved[id] = gameObject;
         }
@@ -18,31 +24,32 @@ public class keepObjectBetweenScenes : MonoBehaviour
         }
 
         DontDestroyOnLoad(gameObject);
+        
 
-        if (gameObject.CompareTag("Player"))
+    }
+    private void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1)
+    {
+        Debug.Log("escena cargada");
+        if (CompareTag("Player"))
         {
-            SpawnScript spawn = FindAnyObjectByType<SpawnScript>();
+            GameObject spawn = GameObject.FindGameObjectWithTag("Spawn");
             if (spawn)
             {
+                Debug.Log("spawn detectado, cargando posicion");
                 transform.position = spawn.transform.position;
             }
             else
             {
+                Debug.Log("spawn no detectado, redirigiendo al centro");
                 transform.position = Vector2.zero;
             }
         }
-        
-
-    }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

@@ -10,8 +10,9 @@ public class DoorInteractable : MonoBehaviour, IInteractable
     [SerializeField] private Collider2D closedCollider;
     [SerializeField] private Collider2D openCollider;
 
-    [Header("Key")]
+    [Header("Access")]
     [SerializeField] private InventoryInfo keyInventoryInfo;
+    [SerializeField] private bool block = false;
 
     private bool opened = false;
 
@@ -28,7 +29,7 @@ public class DoorInteractable : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        if (opened) return;
+        if (!doorCanvas.activeSelf) return;
 
         opened = true;
 
@@ -42,7 +43,7 @@ public class DoorInteractable : MonoBehaviour, IInteractable
 
     public void ShowPrompt()
     {
-        if (!opened)
+        if (!opened && !block)
         { 
             if(keyInventoryInfo != null)
             {
@@ -71,5 +72,10 @@ public class DoorInteractable : MonoBehaviour, IInteractable
             }
         }
         return false;
+    }
+
+    public void unlockDoor()
+    {
+        block = false;
     }
 }
