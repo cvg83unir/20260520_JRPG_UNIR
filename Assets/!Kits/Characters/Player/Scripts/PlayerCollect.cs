@@ -49,7 +49,7 @@ public class PlayerCollect : MonoBehaviour
 
     private void AddObjectToInventory(InventoryInfo invInfo)
     {
-
+        if (!itemsParent)  return; 
             foreach (InventoryItem go in itemsParent.GetComponentsInChildren<InventoryItem>())
             {
                 if (go.compareItem(invInfo))

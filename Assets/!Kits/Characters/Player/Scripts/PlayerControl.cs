@@ -26,6 +26,21 @@ public class PlayerControl : MonoBehaviour
 
     private PlayerWeaponManager weaponManager;
 
+    [Header("Debug")]
+    [SerializeField] bool debugSubscribe;
+    private void OnValidate()
+    {
+        if (this.debugSubscribe)
+        {
+            this.debugSubscribe = false;
+            Subscribe();
+        }
+    }
+
+    private void Update()
+    {
+        
+    }
     private void Awake()
     {
         this.characterController = GetComponent<CharacterController2D>();
@@ -40,6 +55,12 @@ public class PlayerControl : MonoBehaviour
 
     private void OnEnable()
     {
+        Subscribe();
+    }
+
+    public void Subscribe()
+    {
+        
         move.action.Enable();
         //Así cogemos las acciones del personaje sólo cuando hay alguna interacción por parte del jugador
         move.action.started += OnMove;
@@ -153,6 +174,10 @@ public class PlayerControl : MonoBehaviour
 
     private void OnDisable()
     {
+        UnSubscribe();
+    }
+    public void UnSubscribe()
+    {
         move.action.Disable();
         //Así cogemos las acciones del personaje sólo cuando hay alguna interacción por parte del jugador
         move.action.started -= OnMove;
@@ -176,8 +201,11 @@ public class PlayerControl : MonoBehaviour
 
         //El jugador escuchará los eventos OnLifeChanged (cuando la barra de vida aumenta o dismunuye)
         //y OnLifeDepleted (cuando la barra de vida llega a su fin)
-        this.life.onLifeChanged.RemoveListener(OnLifeChanged);
-        this.life.onLifeDepleted.RemoveListener(OnLifeDepleted);
+        this.life?.onLifeChanged.RemoveAllListeners();
+        this.life?.onLifeDepleted.RemoveAllListeners();
+
+        //this.life.onLifeChanged.RemoveListener(OnLifeChanged);
+        //this.life.onLifeDepleted.RemoveListener(OnLifeDepleted);
 
     }
 

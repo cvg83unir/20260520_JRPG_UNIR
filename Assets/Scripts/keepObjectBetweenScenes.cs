@@ -19,6 +19,7 @@ public class keepObjectBetweenScenes : MonoBehaviour
         }
         else if (gameobjectsSaved[id] != gameObject)
         {
+            
             Destroy(gameObject);
             return;
         }
@@ -29,7 +30,10 @@ public class keepObjectBetweenScenes : MonoBehaviour
     }
     private void OnDestroy()
     {
+        Debug.LogError("Me dessubscribo y soy el player falso");
         SceneManager.sceneLoaded -= OnSceneLoaded;
+        gameObject.GetComponent<PlayerControl>()?.UnSubscribe();
+        gameobjectsSaved[0].GetComponent<PlayerControl>().Subscribe();
     }
 
     private void OnSceneLoaded(Scene sc, LoadSceneMode arg1)
@@ -41,7 +45,7 @@ public class keepObjectBetweenScenes : MonoBehaviour
             return;
         }
         Debug.Log("escena cargada");
-        if (CompareTag("Player"))
+        if (CompareTag("Player") && gameobjectsSaved[id] == gameObject)
         {
             GameObject spawn = GameObject.FindGameObjectWithTag("Spawn");
             if (spawn)
@@ -54,15 +58,23 @@ public class keepObjectBetweenScenes : MonoBehaviour
                 Debug.Log("spawn no detectado, redirigiendo al centro");
                 transform.position = Vector2.zero;
             }
+            //Debug.LogError("Me dessubscribo y soy el player verdadero al cargar escena");
+            //gameObject.GetComponent<PlayerControl>().UnSubscribe();
+            Debug.LogError("Me subscribo y soy el player verdadero al cargar escena");
+            gameObject.GetComponent<PlayerControl>().Subscribe();
         }
+
     }
 
     private void CollectiveSuicide()
     {
-        foreach(GameObject go in gameobjectsSaved)
+        
+        foreach (GameObject go in gameobjectsSaved)
         {
             if (go != gameObject && go) Destroy(go);
         }
+        
+        
         Destroy(gameObject);
     }
 
