@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 4532190778404860436}
   - component: {fileID: 261576545667998853}
   - component: {fileID: 7851605202684330253}
+  - component: {fileID: -605948892796649831}
   m_Layer: 11
-  m_Name: EnemyFinalBoss
+  m_Name: EnemyFinalBossBullet
   m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85,7 +86,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -9175345719391108589, guid: 1cb33166b717d204f8be4e229102609b,
+  m_Sprite: {fileID: -6189970161789150723, guid: 1cb33166b717d204f8be4e229102609b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -185,3 +186,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyShoot
   shotSpeed: 3
   shotDuration: 10
+--- !u!95 &-605948892796649831
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6794019517115419129}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: ae6b6077b0f5f834899e3107213a64e6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
