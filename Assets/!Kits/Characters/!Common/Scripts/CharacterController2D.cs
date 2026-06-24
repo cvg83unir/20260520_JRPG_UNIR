@@ -1,6 +1,4 @@
 using System;
-using UnityEditor.Experimental.GraphView;
-using UnityEditorInternal.Profiling.Memory.Experimental;
 using UnityEngine;
 
 public class CharacterController2D : MonoBehaviour, IVisible

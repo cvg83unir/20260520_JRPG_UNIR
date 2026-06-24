@@ -49,19 +49,19 @@ public class PlayerCollect : MonoBehaviour
 
     private void AddObjectToInventory(InventoryInfo invInfo)
     {
-        
 
-        foreach (InventoryItem go in itemsParent.GetComponentsInChildren<InventoryItem>())
-        {
-            if (go.compareItem(invInfo))
+            foreach (InventoryItem go in itemsParent.GetComponentsInChildren<InventoryItem>())
             {
-                go.addUsage(invInfo.remainingUseCount);
-                return;
+                if (go.compareItem(invInfo))
+                {
+                    go.addUsage(invInfo.remainingUseCount);
+                    return;
+                }
             }
-        }
 
-        GameObject newItem = Instantiate(inventoryItemUIPrefab, itemsParent);
-        newItem.GetComponent<InventoryItem>().Initialize(this.inventory, invInfo);
+            GameObject newItem = Instantiate(inventoryItemUIPrefab, itemsParent);
+            newItem.GetComponent<InventoryItem>().Initialize(this.inventory, invInfo);
+
     }
 
 }
