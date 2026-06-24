@@ -11680,11 +11680,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChestSection5
       objectReference: {fileID: 0}
+    - target: {fileID: 1518078296402477030, guid: 10f2956bf885a654887e329808513f2a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5517549304015618847, guid: 10f2956bf885a654887e329808513f2a,
         type: 3}
       propertyPath: rewardPrefab
       value: 
-      objectReference: {fileID: 2310877623762095234, guid: 82b4bcec7d8714f419fd5f4c5d8f85da,
+      objectReference: {fileID: 1462958405902349236, guid: d54546c0b31f1ad43927d3c2c80c104c,
         type: 3}
     - target: {fileID: 5517549304015618847, guid: 10f2956bf885a654887e329808513f2a,
         type: 3}
